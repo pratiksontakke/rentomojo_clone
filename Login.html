@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </style>
-   
-    <link rel="stylesheet" href="/day2_style/signup.css">
+    <title>Login Page</title>
+    <style link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></style>
+
+<link rel="stylesheet" href="./styles/login.css">
+        
 
         
 
-       
-   
+    
 </head>
 <body>
 
@@ -29,8 +29,7 @@
     <img src="https://www.rentomojo.com/public/images/smartAuth/close.svg" alt="cross" id="sam_back_to_home" onclick="backHomeFunc()">
 
             <div>
-                <p id="sam_heading">Enter your number to
-                    Signup or Login
+                <p id="sam_heading">Please enter the OTP
                     </p>
             </div>
         
@@ -38,11 +37,12 @@
 
                <div id="sam_input_div">
                     <form id="form">
-                        <input type="number" autocomplete="off" id="sam_number" placeholder="Enter your phone number* " required>
-        
+                        <input type="password" autocomplete="off" id="sam_number" placeholder="Enter the OTP* " required>
+                           <p id="otp_sent"></p>
+                           <p id="change_number" onclick="numberChangeFunc()"> Change Number</p>
                         
                             <!-- <input type="submit" disabled value="Continue" id="sam_submit"> -->
-                       <button disabled id="sam_submit"  type="submit">Continue</button>
+                       <button disabled id="sam_submit" type="submit">Continue</button>
                        
                     </form>
                 </div>
@@ -56,8 +56,9 @@
 </body>
 </html>
 
-<script src="/day2_script/signup.js"> </script>
+<script src="./scripts/login.js">
 
 
 
-   
+
+</script>

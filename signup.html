@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyc PAge</title>
+    <title>Document</title>
     <style link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </style>
+   
+    <link rel="stylesheet" href="./styles/signup.css">
 
-<link rel="stylesheet" href="/day2_style/kycPage.css">
         
 
-         
-
+       
    
 </head>
 <body>
@@ -29,25 +29,20 @@
     <img src="https://www.rentomojo.com/public/images/smartAuth/close.svg" alt="cross" id="sam_back_to_home" onclick="backHomeFunc()">
 
             <div>
-                <p id="sam_heading">Just one last step
+                <p id="sam_heading">Enter your number to
+                    Signup or Login
                     </p>
             </div>
         
            
 
                <div id="sam_input_div">
-                    <form id="form" action="form">
-
-                        <!-- <label for="sam_name"></label> -->
-
-                        
-                        <input type="text" autocomplete="off" id="sam_name" placeholder="Enter name as per PAN /Govt ID*" required>
-                        <input type="email" autocomplete="off" id="sam_email_id" placeholder="Email ID* " required>
-                        <input type="text" autocomplete="off" id="sam_referral" placeholder="Referral Code (Optional)" required>
+                    <form id="form">
+                        <input type="number" autocomplete="off" id="sam_number" placeholder="Enter your phone number* " required>
         
                         
-                            <input type="submit" disabled  value="Continue" id="sam_submit">
-                       <!-- <button disabled id="sam_submit"  type="submit">Continue</button> -->
+                            <!-- <input type="submit" disabled value="Continue" id="sam_submit"> -->
+                       <button disabled id="sam_submit"  type="submit">Continue</button>
                        
                     </form>
                 </div>
@@ -61,9 +56,8 @@
 </body>
 </html>
 
-<script src="/day2_script/kycPage.js">
+<script src="./scripts/signup.js"> </script>
 
 
 
    
-</script>
