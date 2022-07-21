@@ -5,68 +5,64 @@
 }
 
 
-
-
-
-#moh_mainF {
+#moh_mainFI {
     border: 1px solid red;
-    margin: auto;
+    width: 100%;
     height: auto;
 }
 
-#moh_deskF {
+#moh_deskFI {
     border: 1px solid blue;
     font-size: 16px;
     font-weight: 300;
     padding: 15px 0;
 }
-#moh_deskF span{
+
+#moh_deskFI span {
     color: red;
     margin: 10px;
     padding: 10px;
 }
-#moh_deskF span+span~span{
+
+#moh_deskFI span+span~span {
     color: green;
     margin: 60px;
+    text-decoration-line: none;
 }
-.moh_headingF{
+
+#moh_deskFI a {
+    text-decoration-line: none;
+}
+
+.moh_headingFI{
     margin-top: 80px;
-    text-align: center;
     font-weight: lighter;
+    text-align: center;
 }
-#moh_roomF{
+
+#moh_roomFI {
     border: 1px solid;
     width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(1, 200px);
     gap: 40px;
     margin-top: 50px;
 }
 
-#moh_roomF>div{
+#moh_roomFI>div {
     border: 1px solid green;
+    cursor: pointer;
 
 }
-#moh_ApartmentF{
-    border: 1px solid yellow;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    gap: 40px;
-    margin: auto;
-    margin-top: 50px;
-}
-#moh_ApartmentF>div{
-    border: 1px solid teal;
-}
-#moh_roomF img{
+
+#moh_roomFI img {
     width: 100%;
     height: 200px;
 }
-.moh_pacF{
+
+.moh_pacFI {
     border: 1px solid #e6e6e6;
     border-radius: 2px;
     margin-left: auto;
@@ -81,27 +77,27 @@
     text-align: center;
     font-size: 18px;
 }
-#moh_ApartmentF img{
-    width: 100%;
-    height: 200px;
+
+.moh_viewallFI{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    cursor: pointer;
 }
-.moh_viewallF>i{
+.moh_viewallFI>i{
     color: #1dbdc0;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    font-size: 60px;
-    background-color: white;    
+    background-color: white;  
+    margin-top: 20px;  
+    margin-left: 10px;
 }
-.moh_viewallF>p{
+.moh_viewallFI>p{
     color: #1dbdc0;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 17px;
 }
-#moh_deskF a{
-    text-decoration-line: none;
-}
-.moh_headingLineF{
+.moh_headingLineFI{
     width: 5%;
     margin: auto;
     font-size: 5px;

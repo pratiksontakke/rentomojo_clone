@@ -10,7 +10,6 @@
 
 #moh_main {
     border: 1px solid red;
-    width: 90%;
     margin: auto;
     height: auto;
 }
@@ -33,6 +32,7 @@
 .moh_heading{
     margin-top: 80px;
     margin-left: 150px;
+    font-weight: lighter;
 }
 #moh_room{
     border: 1px solid;
@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 200px);
-    gap: 20px;
+    gap: 40px;
     margin: auto;
     margin-top: 50px;
 }
@@ -83,5 +83,14 @@
 #moh_Apartment img{
     width: 100%;
 }
-
+#moh_desk a{
+    text-decoration-line: none;
+}
+.moh_headingLine{
+    width: 5%;
+    font-size: 5px;
+    border: 1px red solid;
+    margin-top: 10px;
+    margin-left: 150px;
+}
 
