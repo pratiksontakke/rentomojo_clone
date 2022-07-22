@@ -1,3 +1,4 @@
+
 const sam_submit = document.getElementById('sam_submit');
 
 sam_submit.addEventListener("click", displayDate);
@@ -22,9 +23,9 @@ input.addEventListener("keyup",(e) => {
 })
 
 
-let form = document.getElementById('form');
-let number = form.sam_number.value;
-let Number1 = JSON.parse(localStorage.getItem('users'));
+// let form = document.getElementById('form');
+// let number = form.sam_number.value;
+// let Number1 = JSON.parse(localStorage.getItem('users'));
 
 
 
@@ -55,16 +56,16 @@ let Number1 = JSON.parse(localStorage.getItem('users'));
         
 
       let form = document.getElementById('form');
-let number = form.sam_number.value;
-let Number = JSON.parse(localStorage.getItem('users'));
+     let number = form.sam_number.value;
+// let Number = JSON.parse(localStorage.getItem('users'));
 
  
       
-        console.log("Existing User");
-        window.location.href = "Login.html";
+        // console.log("Existing User");
+        // window.location.href = "Login.html";
     
  
-        localStorage.setItem('users',number);
+        localStorage.setItem('users', number);
         window.location.href = "otp.html";
   
     //  console.log(number);
@@ -78,3 +79,10 @@ form.sam_number.value = null;
         window.location.href = "pro.html";
     
 }
+
+
+
+
+
+
+// @media all and (min-width:350px) and (max-width:479px)
