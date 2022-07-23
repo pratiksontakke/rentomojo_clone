@@ -6,6 +6,7 @@
 #moh_mainPro>div {
     border: 1px solid blue;
     height: 500px;
+    margin-top: 60px;
 }
 
 #moh_mainPro h2 {
@@ -27,13 +28,15 @@
 
 #moh_saftey {
     border: 1px solid skyblue;
-    height: 50px;
     display: flex;
     padding: 20px;
     margin-left: 70px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
-
+#moh_headPro{
+    margin-top: 50px;
+    color: red;
+}
 #moh_saftey>img {
     width: 50px;
     height: 50px;
@@ -53,10 +56,10 @@ h2+hr {
 
 #moh_proDetails {
     border: 1px solid green;
-    width: 70%;
-    height: 500px;
+    width: 65%;
     display: flex;
-    margin-top: 230px;
+    margin-top: 250px;
+    margin-left: 70px;
 }
 
 #moh_proDetails>div {
@@ -110,6 +113,7 @@ hr+p {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin-top: 20px;
 }
 
 #moh_priceDetail>div {
@@ -127,6 +131,15 @@ hr+p {
 }
 
 #moh_depo {
+    margin-top: 16px;
+    margin-left: 10px;
+}
+#moh_monthD {
+    margin-top: 16px;
+    margin-left: 8px;
+}
+
+#moh_depoD {
     margin-top: 16px;
     margin-left: 10px;
 }
@@ -178,4 +191,34 @@ hr+p {
 
 #moh_barImg img {
     width: 100%;
+}
+
+#moh_coupon{
+    border: 1px solid grey;
+    border-style: dashed;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+}
+#moh_coupon>div{
+    border: 1px solid blue;
+}
+#moh_coupBtn{
+    right: 30px;
+    width: 61px;
+    height: 30px;
+    align-self: center;
+    border-radius: 2.1px;
+    border: 1px solid #1dbdc0;
+    color: #1dbdc0;
+    background: #fff;
+    box-shadow: none;
+    cursor: pointer;
+}
+#moh_special{
+    margin-top: 30px;
+    margin-left: 10px;
 }
