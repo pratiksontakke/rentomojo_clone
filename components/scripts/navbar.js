@@ -1,9 +1,9 @@
 let navbar1 = () => {
     return `
-    <link rel="stylesheet" href="/components/styles/navBarStyle.css">
+    <link rel="stylesheet" href="./components/styles/navBarStyle.css">
     <div id="kau_main">
         <div id="kau_innerMain">
-            <img id="kau_logo" src="../images/icons/image.svg" alt="">
+            <a id="kau_logo" href="../index.html"><img  src="../images/icons/image.svg" alt=""></a>
             <select name="" id="kau_city">
                 <option value="">City</option>
                 <option value="Bangalore">Bangalore</option>
@@ -21,37 +21,39 @@ let navbar1 = () => {
             <span>
                 <img id="kau_searchLogo" src="../images/icons/image2.svg" alt="">
             </span>
-            <span>
-                <img id="kau_cartLogo" src="../images/icons/image1.svg" alt="">
-            </span>
-            <span id="kau_cart">Cart</span>
+            <a href="../cart.html" class="nav_display_flex">
+                <span>
+                    <img id="kau_cartLogo" src="../images/icons/image1.svg" alt="">
+                </span>
+                <span id="kau_cart">Cart</span>
+            </a>
+            
 
             <div>
                 <button id="kau_button">LOGIN/SIGNUP</button>
                 <div id="kau_show-on-hover" class="kau_dropdc">
                     <p>
                         <img src="https://cdn-icons-png.flaticon.com/128/8033/8033582.png" alt="">
-                        <a href="">My Account</a>
+                        <a href="../myAccount.html">My Account</a>
                     </p>
 
                     <p>
                         <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
-                        <a href="">My Wishlist</a>
+                        <a href="#">My Wishlist</a>
                     </p>
 
                     <p>
                         <img src="https://cdn-icons-png.flaticon.com/128/3524/3524659.png" alt="">
-                        <a href="">Setting</a>
+                        <a href="../mySetting.html">Setting</a>
                     </p>
 
                     <p>
                         <img src="../images/icons/logouticon.png"
                             alt="">
-                        <a href="">Logout</a>
+                        <a href="#">Logout</a>
                     </p>
                 </div>
             </div>
-
         </div>
     </div>`
 }
