@@ -151,9 +151,6 @@ a:hover {
   margin: auto;
   background: #f5f7fa;
 }
-
-
-
 .pra_card {
   display: inline-block;
   padding: 20px;
@@ -211,12 +208,10 @@ a:hover {
   height: 3px;
   
 }
-
 ::-webkit-scrollbar-track {
   border-radius: 0;
   background: #f5f7fa;
 }
-
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
   background: rgba(246, 3, 3, 0.25);
