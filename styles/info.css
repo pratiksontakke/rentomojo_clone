@@ -4,43 +4,43 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-#main {
+#par_par #main {
   width: 100%;
   display: flex;
-  margin: 50px auto;
+  margin: 100px auto;
   justify-content: end;
 }
-a {
+#par_par #main a {
   text-decoration: none;
   cursor: pointer;
   color: #dc3226;
 }
-#left {
+#par_par #left {
   width: 47%;
 }
-#right {
+#par_par #right {
   width: 44%;
   padding: 60px 80px 60px 40px;
   background-color: #fafafa;
 }
-#contact {
+#par_par #contact {
   font-weight: 500;
   font-family: sans-serif;
   margin-bottom: 20px;
 }
-#tick {
+#par_par #tick {
   display: flex;
   /* justify-content: start; */
   align-items: start;
   margin-bottom: 40px;
 }
-#tick > p {
+#par_par #tick > p {
   display: flex;
   /* justify-content: start; */
   align-items: center;
   height: 22px;
 }
-#tick > input {
+#par_par #tick > input {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -48,10 +48,10 @@ a {
   accent-color: #dc3226;
   border-radius: 20%;
 }
-input[type="checkbox"]:checked {
+#par_par input[type="checkbox"]:checked {
   background-color: #dc3226;
 }
-input[type="checkbox"]:checked:after {
+#par_par input[type="checkbox"]:checked:after {
   background-color: #dc3226;
   padding: 0px;
   padding-right: 4px;
@@ -60,14 +60,14 @@ input[type="checkbox"]:checked:after {
   font-size: 15px;
   color: rgb(241, 235, 235);
 }
-#form {
+#par_par #form {
   width: 90%;
 }
-#form > select {
+#par_par #form > select {
   width: 100%;
 }
-select,
-input {
+#par_par select,
+#par_par input {
   font-size: 15px;
   padding: 15px 10px;
   border-radius: 7px;
@@ -75,33 +75,33 @@ input {
   margin-bottom: 15px;
   width: 100%;
 }
-input:focus,
-select:focus {
+#par_par input:focus,
+#par_par select:focus {
   outline: none;
   border: 3px solid #dc3226;
 }
-#name {
+#par_par #name {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
-#state {
+#par_par #state {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-#form > div:last-child {
+#par_par #form > div:last-child {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
   margin-top: -20px;
   align-items: center;
 }
-#form > div:last-child > p {
+#par_par #form > div:last-child > p {
   cursor: pointer;
   color: #dc3226;
 }
-#submit {
+#par_par #submit {
   width: 190px;
   height: 60px;
   font-size: 15px;
@@ -112,10 +112,10 @@ select:focus {
   cursor: pointer;
   background-color: #616160;
 }
-#submit:hover {
+#par_par #submit:hover {
   background-color: #494948;
 }
-#left > div:last-child {
+#par_par #left > div:last-child {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr) 3fr;
@@ -123,40 +123,40 @@ select:focus {
   color: #dc3226;
   margin: 20px 0px;
 }
-#left > div:last-child > p {
+#par_par #left > div:last-child > p {
   cursor: pointer;
 }
-hr {
+#par_par hr {
   border: 0.1px solid rgb(229, 228, 228);
   width: 90%;
 }
-#right > p:first-child {
+#par_par #right > p:first-child {
   font-size: 17px;
   font-weight: bold;
   color: #dc3226;
   margin-bottom: 50px;
 }
-.text > span {
+#par_par .text > span {
   color: #dc3226;
 }
-#container {
+#par_par #container {
   width: 90%;
   height: 120px;
   overflow: auto;
   margin-top: 15px;
   margin-bottom: 25px;
 }
-.vl {
+#par_par .vl {
   border-right: 2px solid rgb(229, 228, 228);
   height: auto;
 }
-.rec {
+#par_par .rec {
   width: 100%;
   display: grid;
   grid-template-columns: 64% 22%;
   gap: 20px;
 }
-.button {
+#par_par .button {
   font-size: 15px;
   /* width: 190px; */
   height: 50px;
@@ -166,10 +166,10 @@ hr {
   color: white;
   font-weight: 600;
 }
-.button:hover {
+#par_par .button:hover {
   background-color: #dc3226;
 }
-#totalBar {
+#par_par #totalBar {
   width: 100%;
   height: 60px;
   padding-right: 55px;
@@ -177,21 +177,21 @@ hr {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-#totalBar > div:last-child {
+#par_par #totalBar > div:last-child {
   height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-end;
 }
-#total {
+#par_par #total {
   display: flex;
   flex-direction: row-reverse;
   font-weight: 600;
   color: black;
   margin-bottom: 10px;
 }
-#totalBar2 {
+#par_par #totalBar2 {
   width: 100%;
   height: 60px;
   padding-right: 55px;
@@ -200,70 +200,70 @@ hr {
   align-items: center;
   margin-bottom: 20px;
 }
-#totalBar2 > div {
+#par_par #totalBar2 > div {
   width: 150px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.text {
+#par_par .text {
   font-size: 15px;
   font-weight: 500;
   color: black;
 }
 /* Large Screen */
 @media all and (min-width: 721px) and (max-width: 1500px) {
-  #main {
+  #par_par #main {
     width: 100%;
   }
-  #left {
+  #par_par #left {
     width: 46%;
   }
-  #right {
+  #par_par #right {
     width: 45%;
     padding-right: 80px;
   }
-  #left > div:last-child {
+  #par_par #left > div:last-child {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr) 2fr;
     /* gap: 10px; */
     font-size: 10px;
   }
-  #container {
+  #par_par #container {
     width: 90%;
   }
-  #nav {
+  #par_par #nav {
     width: 43%;
   }
-  #nav > div {
+  #par_par #nav > div {
     width: 100%;
   }
-  #nav > div p {
+  #par_par #nav > div p {
     font-size: 12px;
   }
-  #avatar {
+  #par_par #avatar {
     width: 100%;
     align-items: center;
   }
 }
 /* Medium Screen */
 @media all and (min-width: 480px) and (max-width: 720px) {
-  #main {
+  #par_par #main {
     width: 100%;
     flex-direction: column;
     margin: auto;
   }
-  #left {
+  #par_par #left {
     width: 100%;
     margin: auto;
     padding-left: 100px;
   }
-  #right {
+  #par_par #right {
     width: 100%;
     padding-left: 100px;
   }
-  #left > div:last-child {
+  #par_par #left > div:last-child {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr) 2fr;
@@ -276,49 +276,49 @@ hr {
 }
 /* small Screen */
 @media all and (min-width: 350px) and (max-width: 479px) {
-  #main {
+  #par_par #main {
     width: 100%;
     flex-direction: column;
     margin: auto;
   }
-  #left {
+  #par_par #left {
     width: 100%;
     margin: auto;
     padding: 0px;
     padding-left: 15px;
   }
-  #form {
+  #par_par #form {
     width: 95%;
   }
-  #right {
+  #par_par #right {
     width: 100%;
     padding: 0px 15px;
   }
-  #left > div:last-child {
+  #par_par #left > div:last-child {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr) 1fr;
     font-size: 9px;
   }
-  #totalBar {
+  #par_par #totalBar {
     padding-right: 0px;
   }
-  #totalBar2 {
+  #par_par #totalBar2 {
     padding-right: 0px;
   }
-  #container {
+  #par_par #container {
     height: 160px;
   }
-  #nav {
+  #par_par #nav {
     width: 40%;
   }
-  #nav > div {
+  #par_par #nav > div {
     width: 100%;
   }
-  #nav > div p {
+  #par_par #nav > div p {
     font-size: 9px;
   }
-  #avatar {
+  #par_par #avatar {
     width: 100%;
     align-items: center;
   }
