@@ -1,5 +1,13 @@
+let singleProduct = JSON.parse(localStorage.getItem("singleProduct")) || {};
 import products from "../db/db.js";
-console.log("products:", products);
+import navbar1 from "../components/scripts/navbar.js";
+document.querySelector("#navbar").innerHTML = navbar1();
+function kau_myfunc() {
+    let div = document.querySelector("#kau_show-on-hover");
+    div.classList.toggle("kau_show");
+    console.log("kau_button")
+}
+document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
 let displayData = () => {
     document.querySelector("#pra_cartAppend").innerHTML = null;
     products.forEach((el, index) => {
@@ -42,6 +50,17 @@ let displayData = () => {
         document.querySelector("#pra_cartAppend").append(divMain);
     });
 };
+let pra_addCart = (el, index) => {
+    console.log("pra_addCart");
+};
+let pra_addSingle = (el, index) => {
+    console.log("singleProduct", el);
+    singleProduct = el;
+    localStorage.setItem("singleProduct", JSON.stringify(singleProduct));
+};
+window.onload = displayData();
+
+
 /*  
 {
     cartImgLink: "i05w1kj4-1024x512.jpg",
@@ -56,10 +75,3 @@ let displayData = () => {
     id: "pra_12345",
 }
 */
-let pra_addCart = (el, index) => {
-    console.log("pra_addCart", el);
-};
-let pra_addSingle = (el, index) => {
-    console.log("pra_addSingle");
-};
-window.onload = displayData();
