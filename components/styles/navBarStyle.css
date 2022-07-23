@@ -5,7 +5,7 @@
 }
 #kau_main{
     width: 100%;
-    height: 6vh;
+    height: 7vh;
     border: 1px solid transparent;
     position: sticky;
     top: 0px;
@@ -36,18 +36,20 @@
 #kau_scarch{
     margin-top: .5%;
     margin-left: 40px;
-    width: 57%;
+    width: 59%;
     height: 75%;
     border-radius: 10px;
     border-color: rgb(215, 211, 211);
-    background-color: rgb(245,247,250);
+    /* background-color: rgb(245,247,250); */
     font-size: 15px;
     font-family: Muli, sans-serif;
-    padding: 10px;
+    padding: 20px;
+    border: .5px solid rgb(215, 211, 211);
 }
 #kau_searchLogo{
     margin-top: 20px;
     margin-left: -35px;
+    /* margin-right: 300px; */
     height: 15px;
 }
 #kau_cartLogo{
@@ -88,6 +90,7 @@
 }
 #kau_show-on-hover {
     background-color: #fff;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;;
 }
 #kau_show-on-hover>p>img{
     width: 18px;
@@ -122,12 +125,4 @@
     color: rgb(94, 90, 90);
     font-family: Muli, sans-serif;
     font-size: 18px;
-}
-
-
-
-
-body>div+div{
-    background-color: cyan;
-    height: 2000px;
 }
