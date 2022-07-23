@@ -12,6 +12,9 @@
 #moh_mainPro h2 {
     margin-left: 70px;
 }
+#moh_prodName {
+    margin-top: 20px;
+}
 
 #moh_mainPro>div:nth-child(1) {
     width: 70%;

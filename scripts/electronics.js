@@ -8,3 +8,7 @@ div.classList.toggle("kau_show");
 console.log("kau_button")
 }
 document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
+
+let pra_searchKey = JSON.parse(localStorage.getItem("pra_searchKey")) || null;
+pra_searchKey = "electronics";
+localStorage.setItem("pra_searchKey", JSON.stringify(pra_searchKey));
