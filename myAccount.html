@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </style>
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  #sam_main_div{
+    border: 2px solid red;
+    height: 400px;
+    width: 70%;
+    margin-left: 28%;
+    margin-top: 50px;
+    display: flex;
+
+  }
+
+  #sam_main_div > #sam_live_order_div{
+     border: 2px solid blue;
+     height: 95%;
+     width: 50%;
+     margin: auto;
+  }
+
+  #sam_main_div > #sam_welcome_div{
+     border: 2px solid blue;
+     height: 95%;
+     width: 40%;
+     margin: auto;
+     background-color: grey;
+  }
+
+  #sam_welcome{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family:  sans-serif;
+    font-size: 25px;
+  }
+
+
+  #sam_para{
+    color: white;
+    /* margin: 30px; */
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 40px;
+    line-height: 30px;
+    font-size: 17px;
+    font-family:  sans-serif;
+    margin-bottom: 30px;
+}
+
+
+  #sam_btn{
+    color: rgb(20, 255, 157);
+    background-color: white;
+    /* margin: 50px; */
+    margin: auto;
+    width: 150px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:  sans-serif;
+    /* padding: 10px 20px; */
+    /* margin-right:  -40px; */
+
+  }
+
+    </style>
+</head>
+<body>
+    <div id="sam_main_div">
+        <div id="sam_live_order_div"></div>
+        <div id="sam_welcome_div"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    let data = JSON.parse(localStorage.getItem('isLogin'));
+    console.log(data.userName);
+
+    let name =(data.userName);
+   
+    let container = document.getElementById('sam_welcome_div');
+    let append = (elem)=>{
+        let h3 = document.createElement('h3');
+        h3.innerText = `Welcome   ${name}`;
+        h3.setAttribute('id', 'sam_welcome')
+
+        let p = document.createElement('p');
+        p.innerText ="you are at the right place to start your hassle free lifestyle";
+        p.setAttribute('id' , "sam_para");
+
+
+        let btn = document.createElement("div");
+        btn.innerText = "START RENTING";
+        btn.setAttribute('id', 'sam_btn');
+
+        container.append(h3,p,btn);
+
+        
+    }
+
+    append(name);
+
+</script>
