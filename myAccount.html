@@ -1,99 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </style>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </style>
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #sam_big_bucket{
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid rgb(1, 67, 49); */
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  #sam_main_div{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 82%;
+    /* margin-left: 24%; */
+    margin-top: 100px;
+    display: flex;
+    /* display: grid; */
+
+  }
+
+  #sam_main_div > #sam_live_order_div{
+     /* border: 2px solid blue; */
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;     height: 95%;
+     width: 55%;
+     margin: auto;
+     border-radius: 10px;
+     height: 100%;
+  }
+
+  #sam_main_div > #sam_live_order_div > #sam_image_di{
+   margin: auto;
+   display: flex;
+   /* border: 1px solid red; */
+   height: 200px;
+   width: 270px;
+   /* margin-top: 10px; */
+
+  }
+
+  #sam_live_para{
+    margin: auto;
+   display: flex;
+   /* border: 1px solid red; */
+   height: 40px;
+   width: 190px;
+   margin-top: 30px;
+   text-align: center;
+   padding-left: 50px;
+   padding-top: 20px;
+  }
+
+  #sam_live_para >h3{
+   color: grey;
+   font-family:  sans-serif;
+   font-size: 16px;
+  }
+
+  #sam_main_div > #sam_welcome_div{
+     /* border: 2px solid blue; */
+     height: 100%;
+     width: 40%;
+     margin: auto;
+     background-color: grey;
+     font-family:  sans-serif;
+     border-radius: 10px;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  
     }
-    #sam_main_div {
-      border: 2px solid red;
-      height: 400px;
-      width: 70%;
-      margin-left: 28%;
-      margin-top: 50px;
+
+  #sam_welcome{
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    text-align: center;
+    font-family:  sans-serif;
+    font-size: 25px;
+  }
+
+
+  #sam_para{
+    color: white;
+    /* margin: 30px; */
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 40px;
+    line-height: 30px;
+    font-size: 17px;
+    font-family:  sans-serif;
+    margin-bottom: 30px;
+}
+
+
+  #sam_btn{
+    color: rgb(20, 255, 157);
+    background-color: white;
+    /* margin: 50px; */
+    margin: auto;
+    width: 150px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family:  sans-serif;
+    /* padding: 10px 20px; */
+    /* margin-right:  -40px; */
+
+  }
+
+  #sam_btn:hover{
+    cursor: pointer;
+  }
+
+  #sam_image{
+    height: 250px;
+    width: 300px;
+  }
+  #sam_image:hover{
+    cursor: pointer;
+    /* background-color: red; */
+  }
+
+  #sam_bottom_div{
+    height: 110px;
+    width: 80%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* width: 75%; */
+    margin-left: 19%;
+    margin-top: 10px;
+    display: flex;
+    /* border: 2px solid royalblue; */
+  }
+  #sam_bottom_div > div{
+    height: 60%;
+    width: 98%;
+    border: 1px solid grey;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    #sam_bottom_div > div >h3{
+      padding-left: 20px;
+      font-family:  sans-serif;
+      color: #717171;
+      font-weight: lighter;
+      font-size: 16px;
+    }
+
+    #sam_bottom_div > div >h3{
+      cursor: pointer;
+    }
+
+    #sam_bottom_div > div >h3 >a{
+      color: #717171;
+      text-decoration: none;
+
+    }
+
+    #sam_bottom_div > div >h3 >a:hover{
+      text-decoration: underline;
+    }
+
+    #sam_side_div{
+      height: 600px;
+      width: 250px;
+      /* border: 2px solid blue; */
+      margin-top: 100px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .sam_icon{
+      height: 30px;
+      width: 30px;
+
+    }
+
+    #sam_side_div > div > div{
+     display: flex;
+     margin: auto;
+     /* margin: 20px; */
+     /* border: 1px solid orange; */
+     padding: 10px;
+    }
+
+    #sam_side_div > div > div:hover{
+  cursor: pointer;
+  background-color: hsla(0, 4%, 86%, 0.564);
+    }
+
+    #sam_side_div > div > div > p{
+      color: #717171;
+      font-family:  sans-serif;
+      font-size: 15px;
+    }
+
+    #sam_side_div > div > div > p >a{
+      color: #717171;
+      text-decoration: none;
+    }
+
+
+    #sam_side_div > div > div > .sam_icon{
+      margin-left: 20px;
+      margin-right: 30px;
+    }
+
+    #sam_2nd_half{
+      /* border: 1px solid red; */
+      height: 270px;
+      width: 100%;
       display: flex;
+      padding-left: 15px;
     }
-    #sam_main_div>#sam_live_order_div {
-      border: 2px solid blue;
-      height: 95%;
-      width: 50%;
-      margin: auto;
+    #sam_png_image{
+      height: 100%;
+      width: 95%;
+      
     }
-    #sam_main_div>#sam_welcome_div {
-      border: 2px solid blue;
-      height: 95%;
-      width: 40%;
-      margin: auto;
-      background-color: grey;
+
+    @media all and (min-width: 350px) and (max-width: 479px) {
+      #sam_big_bucket{
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid rgb(1, 67, 49); */
+    display: grid;
+
+    /* margin: auto; */
+    /* justify-content: space-between; */
+  }
+
+  #sam_main_div{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 150%;
+    /* margin-left: 24%; */
+    /* margin-top: 100px; */
+    display: grid;
+    margin-left: -90px;
+    /* margin-bottom: 100px; */
+    /* display: grid; */
+
+   }
+
+   #sam_main_div > #sam_live_order_div{
+     /* border: 2px solid blue; */
+    
+     width: 80%;
+     margin: auto;
+    padding-bottom: 100px;
+    /* padding-right: 20px; */
+     height: 100%;
+     margin-top: 50px;
+     margin-left: 20px;
+  }
+
+   #sam_main_div > #sam_welcome_div{
+     /* border: 2px solid blue; */
+     height: 250px;
+     width: 80%;
+     margin: auto;
+     margin-top: 80px;
+     margin-left: 20px;
+     }
+
+     #sam_bottom_div{
+     height: 80px;
+     width: 100%;
+     /* display: flex; */
+     margin-top: 220px;
+     margin-left: 20px;
+    /* border: 2px solid royalblue; */
+  }
+
+  #sam_side_div{
+      height: 600px;
+      width: 100%;
+      margin-left: 20px;
+      /* border: 2px solid blue; */
+      
     }
-    #sam_welcome {
-      color: white;
-      margin-bottom: 30px;
-      margin-top: 30px;
-      text-align: center;
-      font-family: sans-serif;
-      font-size: 25px;
+ }
+
+
+ @media all and (min-width: 480px) and (max-width: 720px) {
+      #sam_big_bucket{
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid rgb(1, 67, 49); */
+    display: grid;
+
+    /* margin: auto; */
+    /* justify-content: space-between; */
+  }
+
+  #sam_main_div{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 150%;
+    /* margin-left: 24%; */
+    /* margin-top: 100px; */
+    display: grid;
+    margin-left: -90px;
+    /* margin-bottom: 100px; */
+    /* display: grid; */
+
+   }
+
+   #sam_main_div > #sam_live_order_div{
+     /* border: 2px solid blue; */
+    
+     width: 80%;
+     margin: auto;
+    padding-bottom: 100px;
+    /* padding-right: 20px; */
+     height: 100%;
+     margin-top: 50px;
+     margin-left: 20px;
+  }
+
+   #sam_main_div > #sam_welcome_div{
+     /* border: 2px solid blue; */
+     height: 250px;
+     width: 80%;
+     margin: auto;
+     margin-top: 80px;
+     margin-left: 20px;
+     }
+
+     #sam_bottom_div{
+     height: 80px;
+     width: 100%;
+     /* display: flex; */
+     margin-top: 220px;
+     margin-left: 20px;
+    /* border: 2px solid royalblue; */
+  }
+
+  #sam_side_div{
+      height: 600px;
+      width: 100%;
+      margin-left: 20px;
+      /* border: 2px solid blue; */
+      
     }
-    #sam_para {
-      color: white;
-      /* margin: 30px; */
-      text-align: center;
-      padding-left: 60px;
-      padding-right: 40px;
-      line-height: 30px;
-      font-size: 17px;
-      font-family: sans-serif;
-      margin-bottom: 30px;
-    }
-    #sam_btn {
-      color: rgb(20, 255, 157);
-      background-color: white;
-      /* margin: 50px; */
-      margin: auto;
-      width: 150px;
-      height: 34px;
-      display: flex;
-      justify-content: center;
-      padding-top: 8px;
-      font-size: 14px;
-      font-weight: bold;
-      font-family: sans-serif;
-      /* padding: 10px 20px; */
-      /* margin-right:  -40px; */
-    }
-  </style>
+ }
+
+
+
+    
+
+    </style>
 </head>
 <body>
-  <div id="sam_main_div">
-    <div id="sam_live_order_div"></div>
-    <div id="sam_welcome_div"></div>
+
+<div id="sam_big_bucket">
+
+  <div id="sam_side_div">
+    <div>
+      <div style="background-color: #E2EAF0;" > <img class="sam_icon" src="https://www.rentomojo.com/public/images/dashboard/subscription__icon.svg" alt="icon"> <p><a href="./index.html">Live Orders</a> </p> </div>
+      <div><img class="sam_icon" src="https://www.rentomojo.com/public/images/dashboard/delivered__icon.svg" alt="icon"> <p><a href="#">Undelivered Orders</a> </p></div>
+      <div><img class="sam_icon" src="https://www.rentomojo.com/public/images/dashboard/closed__icon.svg" alt="icon"> <p><a href="#">Refund Status</a> </p></div>
+      <div><img class="sam_icon" src="https://www.rentomojo.com/public/images/payments/epay__icon.svg" alt="icon"> <p><a href="./Payment.html">Easy Payment</a> </p></div>
+      <div><img class="sam_icon" src="https://www.rentomojo.com/public/images/dashboard/referrals__icon.svg" alt="icon"> <p><a href="#">Referrals</a> </p></div>
+      <div><img class="sam_icon" src="https://www.rentomojo.com/public/images/dashboard/request__icon.svg" alt="icon"> <p> <a href="./components/footer.html">Requests</a> </p></div>
+    </div>
+    <div id="sam_2nd_half"> <img id="sam_png_image" src="https://www.rentomojo.com/public/images/dashboard/LHS-Banner-new.gif" alt="pngLoad"> </div>
   </div>
+  
+ 
+ 
+ 
+  <div id="sam_main_div">
+        <div id="sam_live_order_div">
+          <div id="sam_live_para"><h3>Your Live Orders</h3></div>
+          <div id="sam_image_di">  <img src="./images/image.png" id="sam_image" onclick="goLive()"> </div>
+
+        </div>
+        <div id="sam_welcome_div"></div>
+    </div>
+ </div>
+
+
+
+    <div id="sam_bottom_div">
+      <div>
+        <h3><a href="#">LEDGER</a> </h3>
+        <h3> <a href="./Payment.html">PAYMENTS</a> </h3>
+        <h3> <a href="./index.html">RENTOMONEY</a> </h3>
+      </div>
+    </div>
 </body>
 </html>
 <script>
-  let data = JSON.parse(localStorage.getItem('isLogin'));
-  console.log(data.userName);
-  let name = (data.userName);
-  let container = document.getElementById('sam_welcome_div');
-  let append = (elem) => {
-    let h3 = document.createElement('h3');
-    h3.innerText = `Welcome   ${name}`;
-    h3.setAttribute('id', 'sam_welcome')
-    let p = document.createElement('p');
-    p.innerText = "you are at the right place to start your hassle free lifestyle";
-    p.setAttribute('id', "sam_para");
-    let btn = document.createElement("div");
-    btn.innerText = "START RENTING";
-    btn.setAttribute('id', 'sam_btn');
-    container.append(h3, p, btn);
-  }
-  append(name);
+    let data = JSON.parse(localStorage.getItem('isLogin'));
+    console.log(data.userName);
+
+    let name =(data.userName);
+   
+    let container = document.getElementById('sam_welcome_div');
+    let append = (elem)=>{
+        let h3 = document.createElement('h3');
+        h3.innerText = `Welcome   ${name}`;
+        h3.setAttribute('id', 'sam_welcome')
+
+        let p = document.createElement('p');
+        p.innerText ="you are at the right place to start your hassle free lifestyle";
+        p.setAttribute('id' , "sam_para");
+
+
+        let btn = document.createElement("div");
+        btn.innerText = "START RENTING";
+        btn.setAttribute('id', 'sam_btn');
+        btn.addEventListener('click',function(){
+         window.location.href ='index.html';
+        })
+
+        container.append(h3,p,btn);
+
+        
+    }
+
+    append(name);
+
+
+let goLive = ()=> {
+  window.location.href ="index.html";
+}
+
+
 </script>

@@ -109,5 +109,22 @@ let products = [
       id: "pra_12353",
     },
 ];
-const allProduct= JSON.parse(products);
-console.log(`The Object is :`, allProduct)
+
+
+let sub_products= document.getElementById("moh_packPro");
+sub_products.addEventListener("click", ()=>{
+  console.log("HII")
+  populate();
+})
+
+function populate(){
+  let result_product= products["product"];
+  let html="";
+  result_product.forEach(element => {
+    html+=`<h1> one of the img is ${element.name} </h1>`;
+  });
+
+  let defs=document.getElementById("defs");
+    defs.innerHTML=html;
+}
+
