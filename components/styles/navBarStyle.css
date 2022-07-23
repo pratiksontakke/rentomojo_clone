@@ -78,12 +78,12 @@
 /* #kau_button:not(:hover)+#kau_show-on-hover {
     display: none;
 } */
-.dropdc{
+.kau_dropdc{
     display:none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.show{
+.kau_show{
     display: block;
 }
 #kau_show-on-hover {
