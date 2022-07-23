@@ -1,4 +1,5 @@
 let singleProduct = JSON.parse(localStorage.getItem("singleProduct")) || {};
+let addToCart = JSON.parse(localStorage.getItem("addToCart")) || [];
 import products from "../db/db.js";
 import navbar1 from "../components/scripts/navbar.js";
 import footer1 from "../components/scripts/footer.js";
@@ -7,21 +8,20 @@ document.querySelector("#footer").innerHTML = footer1();
 function kau_myfunc() {
     let div = document.querySelector("#kau_show-on-hover");
     div.classList.toggle("kau_show");
-    console.log("kau_button")
+    console.log("kau_button");
 }
-document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
-
+document.querySelector("#kau_button").addEventListener("click", kau_myfunc);
 let displayData = () => {
     document.querySelector("#pra_cartAppend").innerHTML = null;
     products.forEach((el, index) => {
         let divMain = document.createElement("div");
         divMain.setAttribute("class", "pra_card");
-        divMain.addEventListener("click", () => {
-            pra_addSingle(el, index);
-        });
         let divM1 = document.createElement("div");
         let img = document.createElement("img");
         img.src = `./db/img/${el.cartImgLink}`;
+        img.addEventListener("click", () => {
+            pra_addSingle(el, index);
+        });
         let divM2 = document.createElement("div");
         let divM21 = document.createElement("div");
         let pra_name = el.name;
@@ -43,7 +43,7 @@ let displayData = () => {
         let button1 = document.createElement("button");
         button1.innerText = "See more";
         button1.addEventListener("click", () => {
-            pra_addCart(el, index);
+            pra_addTocartFun(el, index);
         });
         divM1.append(img);
         divM24.append(button1);
@@ -53,16 +53,30 @@ let displayData = () => {
         document.querySelector("#pra_cartAppend").append(divMain);
     });
 };
-let pra_addCart = (el, index) => {
-    console.log("pra_addCart");
-};
 let pra_addSingle = (el, index) => {
     console.log("singleProduct", el);
     singleProduct = el;
     localStorage.setItem("singleProduct", JSON.stringify(singleProduct));
+    window.location.href = "./subProduct.html"
+};
+let pra_addTocartFun = (el, index) => {
+    let flag = false;
+    for (let i = 0; i < addToCart.length; i++) {
+        if (addToCart[i].id == el.id) {
+            flag = true;
+        }
+    }
+    if (!flag) {
+        console.log("!include");
+        addToCart.push(el);
+        localStorage.setItem("addToCart", JSON.stringify(addToCart));
+        // alert("");
+
+    } else {
+        alert("already added");
+    }
 };
 window.onload = displayData();
-
 
 /*  
 {
