@@ -41,7 +41,7 @@
 }
 .pra_card > div:nth-child(1) > img {
     height: 220px;
-    width: 220px;
+    width: 100%;
 }
 .pra_card > div:nth-child(2) > div:nth-child(1) {
     color: #313131;
