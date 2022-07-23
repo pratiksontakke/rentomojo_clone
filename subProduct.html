@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div id="moh_mainPro">
         <div>
             <img id="moh_mainPic" src="./db/img/01amf1pl-500x500.jpg" alt="mainPic">
@@ -21,7 +22,7 @@
                     protect our community from COVID-19.</p>
             </div>
             <div>
-                <h2>Product Details</h2>
+                <h2 id="moh_headPro">Product Details</h2>
                 <hr>
             </div>
         </div>
@@ -30,21 +31,28 @@
 
         <div>
             <h2 id="moh_prodName">Felix 3-Seater Fabric Sofa (Blue)</h2>
+            <div id="moh_barImg">
+                <img  src="./images/bar.png" alt="">
+            </div>
             <div id="moh_proPrice">
-                <div>
-                    <h3 id="moh_month">₹ 789 </h3>
-                    <p>Monthly Rent</p>
-                </div>
-                <div>
-                    <h3 id="moh_depo">₹ 1229</h3>
-                    <p>Refundable Deposit</p>
-                </div>
+
+                <div><h3 id="moh_month">₹ 789 </h3><p>Monthly Rent</p></div>
+                <div><h3 id="moh_depo">₹ 1229</h3><p>Refundable Deposit</p></div>
             </div>
             <div id="moh_button">
                 <a href="index.html"><button id="moh_view"> Browse More</button></a>
                 <a href="cart.html"><button id="moh_cart">View cart</button></a>
             </div>
-            <div></div>
+            <p id="moh_special">Special Offers</p> 
+            <div id="moh_coupon">
+                <div>
+                    <p>Use Code: CITY15</p>
+                    <p>Flat 15% off on third Month Invoice </p>
+                </div>
+                <div>
+                    <button id="moh_coupBtn">Copy</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -87,17 +95,11 @@
     </div>
 
     <div id="moh_priceDetail">
-        <div>
-            <p>Monthly Rental:</p>
-            <h3 id="moh_month">₹ 789 </h3>
-        </div>
-        <div>
-            <p>Deposit</p>
-            <h3 id="moh_depo">₹ 1229</h3>
-        </div>
+        <div><p>Monthly Rental:</p> <h3 id="moh_monthD">₹ 789 </h3></div>
+        <div><p>Deposit</p> <h3 id="moh_depoD">₹ 1229</h3></div>
     </div>
-
+    <div id="footer"></div>
 </body>
 
 </html>
-<script type="module" src="scripts/subProduct.js"></script>
+<script type="module" src="./scripts/subProduct.js"></script>
