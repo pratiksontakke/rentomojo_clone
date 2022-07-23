@@ -147,7 +147,7 @@ a:hover {
 }
 /* ecommerce_slider start */
 #ecommerce_slider {
-  padding: 7% 0 3% 10%;
+  padding: 7% 10% 3% 10%;
   margin: auto;
   background: #f5f7fa;
 }
@@ -158,6 +158,8 @@ a:hover {
   border: 0.5px solid rgb(226, 226, 226);
   border-radius: 0px;
   margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .pra_card > div:nth-child(1) > img {
   height: 220px;
@@ -202,17 +204,24 @@ a:hover {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   margin: 30px auto auto auto ;
+
 }
 ::-webkit-scrollbar {
   width: 0px;
-  height: 3px;
-  
+  height: 10px;
+  cursor: pointer; 
 }
 ::-webkit-scrollbar-track {
   border-radius: 0;
-  background: #f5f7fa;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer; 
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 0;
   background: rgba(246, 3, 3, 0.25);
+  border-radius: 1000%;
+  cursor: pointer; 
+
+
 }
