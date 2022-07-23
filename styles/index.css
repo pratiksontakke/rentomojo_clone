@@ -105,7 +105,7 @@ a:hover {
 #pra_testimonial {
     /* border: 1px solid rgb(193, 188, 188); */
     width: 80%;
-    margin: 50px auto 100px auto;
+    margin: 50px auto 50px auto;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
