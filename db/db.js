@@ -1908,5 +1908,4 @@ let products = [
     id: "pra_12503",
   },
 ];
-
 export default products;

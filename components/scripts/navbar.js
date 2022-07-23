@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Navbar</title>
-    <link rel="stylesheet" href="/components/styles/navBarStyle.css">
-</head>
-
-<body>
+let navbar1 = () => {
+    return `
+    <link rel="stylesheet" href="./components/styles/navBarStyle.css">
     <div id="kau_main">
         <div id="kau_innerMain">
             <a id="kau_logo" href="../index.html"><img  src="../images/icons/image.svg" alt=""></a>
@@ -36,7 +30,7 @@
             
 
             <div>
-                <button id="kau_button" onclick="kau_myfunc()">LOGIN/SIGNUP</button>
+                <button id="kau_button">LOGIN/SIGNUP</button>
                 <div id="kau_show-on-hover" class="kau_dropdc">
                     <p>
                         <img src="https://cdn-icons-png.flaticon.com/128/8033/8033582.png" alt="">
@@ -61,7 +55,10 @@
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
-<script type="module" src="./scripts/navbar.js"></script>
+    </div>`
+}
+function kau_myfunc() {
+    let div = document.querySelector("#kau_show-on-hover");
+    div.classList.toggle("kau_show");
+}
+export default navbar1;

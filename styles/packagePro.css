@@ -1,0 +1,12 @@
+#moh_packPro {
+  border: 1px solid red;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 200px);
+  gap: 30px;
+}
+#moh_packPro > div {
+  border: 1px solid blue;
+}

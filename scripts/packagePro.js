@@ -1,5 +1,4 @@
 console.log("Hello");
-
 let products = [
     {
       cartImgLink: "i05w1kj4-1024x512.jpg",
