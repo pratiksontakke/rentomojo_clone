@@ -19,32 +19,63 @@
   #sam_main_div{
     border: 2px solid red;
     height: 400px;
-    width: 70%;
-    margin-left: 28%;
-    margin-top: 50px;
+    width: 75%;
+    margin-left: 24%;
+    margin-top: 100px;
     display: flex;
 
   }
 
   #sam_main_div > #sam_live_order_div{
-     border: 2px solid blue;
-     height: 95%;
-     width: 50%;
+     /* border: 2px solid blue; */
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;     height: 95%;
+     width: 55%;
      margin: auto;
+     border-radius: 10px;
+  }
+
+  #sam_main_div > #sam_live_order_div > #sam_image_di{
+   margin: auto;
+   display: flex;
+   /* border: 1px solid red; */
+   height: 200px;
+   width: 270px;
+   /* margin-top: 10px; */
+
+  }
+
+  #sam_live_para{
+    margin: auto;
+   display: flex;
+   /* border: 1px solid red; */
+   height: 40px;
+   width: 190px;
+   margin-top: 30px;
+   text-align: center;
+   padding-left: 50px;
+   padding-top: 20px;
+  }
+
+  #sam_live_para >h3{
+   color: grey;
+   font-family:  sans-serif;
+   font-size: 16px;
   }
 
   #sam_main_div > #sam_welcome_div{
-     border: 2px solid blue;
+     /* border: 2px solid blue; */
      height: 95%;
      width: 40%;
      margin: auto;
      background-color: grey;
-  }
+     font-family:  sans-serif;
+     border-radius: 10px;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;  }
 
   #sam_welcome{
     color: white;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 60px;
     text-align: center;
     font-family:  sans-serif;
     font-size: 25px;
@@ -82,11 +113,28 @@
 
   }
 
+  #sam_btn:hover{
+    cursor: pointer;
+  }
+
+  #sam_image{
+    height: 250px;
+    width: 300px;
+  }
+  #sam_image:hover{
+    cursor: pointer;
+    /* background-color: red; */
+  }
+
     </style>
 </head>
 <body>
     <div id="sam_main_div">
-        <div id="sam_live_order_div"></div>
+        <div id="sam_live_order_div">
+          <div id="sam_live_para"><h3>Your Live Orders</h3></div>
+          <div id="sam_image_di">  <img src="./images/image.png" id="sam_image" onclick="goLive()"> </div>
+
+        </div>
         <div id="sam_welcome_div"></div>
     </div>
 </body>
@@ -120,4 +168,8 @@
 
     append(name);
 
+
+let goLive = ()=> {
+  window.location.href ="index.html";
+}
 </script>
