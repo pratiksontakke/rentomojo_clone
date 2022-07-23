@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 #mainFooter {
     margin-top: 200px;
     background-color: #f5f7fa;
@@ -11,7 +10,6 @@
     width: 100%;
     border: 1px solid transparent;
 }
-
 #first {
     font-size: 14px;
     color: rgb(116, 116, 116);
