@@ -2,57 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/subProduct.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/subProduct.css" />
     <title>Document</title>
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div id="moh_mainPro">
         <div>
-            <img id="moh_mainPic" src="https://p.rmjo.in/moodShot/flb9zn2b-1024x512.jpg" alt="mainPic">
-
-
+            <img id="moh_mainPic" src="./db/img/01amf1pl-500x500.jpg" alt="mainPic" />
             <div id="moh_saftey">
-                <img src="https://www.rentomojo.com/public/images/icons/virusSafetyGreen.png" alt="saftery">
-                <p>Safety precautions during COVID-19. We’re taking additional steps and precautionary measures to protect our community from COVID-19.</p>
+                <img src="https://www.rentomojo.com/public/images/icons/virusSafetyGreen.png" alt="saftery" />
+                <p>
+                    Safety precautions during COVID-19. We’re taking
+                    additional steps and precautionary measures toprotect
+                    our community from COVID-19.
+                </p>
             </div>
             <div>
-                <h2>Product Details</h2>
-                <hr>
+                <h2 id="moh_headPro">Product Details</h2>
+                <hr />
             </div>
         </div>
 
-
-
         <div>
             <h2 id="moh_prodName">Felix 3-Seater Fabric Sofa (Blue)</h2>
+            <div id="moh_barImg">
+                <img src="./images/bar.png" alt="" />
+            </div>
             <div id="moh_proPrice">
-                <div><h3 id="moh_month">₹ 789 </h3><p>Monthly Rent</p></div>
-                <div><h3 id="moh_depo">₹ 1229</h3><p>Refundable Deposit</p></div>
+                <div>
+                    <h3 id="moh_month">₹ 789</h3>
+                    <p>Monthly Rent</p>
+                </div>
+                <div>
+                    <h3 id="moh_depo">₹ 1229</h3>
+                    <p>Refundable Deposit</p>
+                </div>
             </div>
             <div id="moh_button">
-                <a href="index.html"><button id="moh_view"> Browse More</button></a>
-                <a href="cart.html"><button id="moh_cart">View cart</button></a>
+                <a href="index.html"><button id="moh_view">Browse More</button></a>
+                <a href="#"><button id="moh_cart">View cart</button></a>
             </div>
-            <div></div>
+            <p id="moh_special">Special Offers</p>
+            <div id="moh_coupon">
+                <div>
+                    <p>Use Code: CITY15</p>
+                    <p>Flat 15% off on third Month Invoice</p>
+                </div>
+                <div>
+                    <button id="moh_coupBtn">Copy</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="moh_proDetails">
         <div>
-            <img id="moh_detailPic" src="https://p.rmjo.in/productSquare/ezzd04ug-500x500.jpg" alt="Details pic">
+            <img id="moh_detailPic" src="https://p.rmjo.in/productSquare/ezzd04ug-500x500.jpg" alt="Details pic" />
         </div>
         <div>
             <p id="moh_detailName">Felix 3-Seater Fabric Sofa (Blue)</p>
-            <hr>
-            <p>Elegance meets comfort with the plush Felix Couch. With unmatched comfort and endless options to deck it up, your couch crasher friends will love it, and so will you</p>
+            <hr />
+            <p>
+                Elegance meets comfort with the plush Felix Couch. With
+                unmatched comfort and endless options to deck it up, your
+                couch crasher friends will love it, and so will you
+            </p>
             <div id="moh_descri">
                 <div>
                     <table>
-                        <thead>Sizes & Dimensions</thead>
+                        <thead>
+                            Sizes & Dimensions
+                        </thead>
                         <tbody>
                             <ul>
                                 <li>70"L x 33"B x 24"H</li>
@@ -62,7 +87,9 @@
                 </div>
                 <div>
                     <table>
-                        <thead>Features & Specs</thead>
+                        <thead>
+                            Features & Specs
+                        </thead>
                         <tbody>
                             <ul>
                                 <li>Soft fabric cover</li>
@@ -73,17 +100,21 @@
                     </table>
                 </div>
             </div>
-
         </div>
-
     </div>
 
     <div id="moh_priceDetail">
-        <div><p>Monthly Rental:</p> <h3 id="moh_month">₹ 789 </h3></div>
-        <div><p>Deposit</p> <h3 id="moh_depo">₹ 1229</h3></div>
+        <div>
+            <p>Monthly Rental:</p>
+            <h3 id="moh_monthD">₹ 789</h3>
+        </div>
+        <div>
+            <p>Deposit</p>
+            <h3 id="moh_depoD">₹ 1229</h3>
+        </div>
     </div>
-
+    <div id="footer"></div>
 </body>
 
 </html>
-<script src="scripts/packagePro.js"></script>
+<script type="module" src="./scripts/subProduct.js"></script>

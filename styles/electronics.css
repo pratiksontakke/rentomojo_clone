@@ -4,27 +4,21 @@
   box-sizing: border-box;
 }
 #moh_mainE {
-  border: 1px solid red;
   width: 100%;
   height: auto;
+  margin-top: 62px;
 }
 #moh_deskE {
-  border: 1px solid blue;
   font-size: 16px;
   font-weight: 300;
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 #moh_deskE span {
-  color: red;
   margin: 10px;
   padding: 10px;
-}
-#moh_deskE span + span ~ span {
-  color: green;
-  margin: 60px;
-  text-decoration-line: none;
 }
 #moh_deskE a {
   text-decoration-line: none;
@@ -35,7 +29,6 @@
   text-align: center;
 }
 #moh_roomE {
-  border: 1px solid;
   width: 80%;
   margin: auto;
   display: grid;
@@ -45,7 +38,6 @@
   margin-top: 50px;
 }
 #moh_roomE > div {
-  border: 1px solid green;
   cursor: pointer;
 }
 #moh_roomE > div:hover {
@@ -88,14 +80,6 @@
   width: 5%;
   margin: auto;
   font-size: 5px;
-  border: 1px red solid;
+  border: 0.5px red solid;
   margin-top: 10px;
-}
-#moh_subDeskE {
-  display: flex;
-  justify-content: flex-start;
-}
-#moh_subContE {
-  display: flex;
-  justify-content: flex-end;
 }
