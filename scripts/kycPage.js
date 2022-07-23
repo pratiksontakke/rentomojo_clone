@@ -100,8 +100,8 @@ form.addEventListener("submit", function(event){
 })
 
 
-    function backHomeFunc(){
-        // console.log("Back Homne");
-        window.location.href = "pro.html";
+function backHomeFunc() {
+  // console.log("Back Homne");
+  window.location.href = "index.html";
+}
 
-    }
