@@ -5,36 +5,44 @@
 }
 
 
-
-
-
-#moh_mainA {
+#moh_mainE {
     border: 1px solid red;
     width: 100%;
     height: auto;
 }
 
-#moh_deskA {
+#moh_deskE {
     border: 1px solid blue;
     font-size: 16px;
     font-weight: 300;
     padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
-#moh_deskA span{
+
+#moh_deskE span {
     color: red;
     margin: 10px;
     padding: 10px;
 }
-#moh_deskA span+span~span{
+
+#moh_deskE span+span~span {
     color: green;
     margin: 60px;
+    text-decoration-line: none;
 }
-.moh_headingA{
+
+#moh_deskE a {
+    text-decoration-line: none;
+}
+
+.moh_headingE {
     margin-top: 80px;
+    font-weight: lighter;
     text-align: center;
-    font-weight: lighter   ;
 }
-#moh_roomA{
+
+#moh_roomE {
     border: 1px solid;
     width: 80%;
     margin: auto;
@@ -45,16 +53,22 @@
     margin-top: 50px;
 }
 
-#moh_roomA>div{
+#moh_roomE>div {
     border: 1px solid green;
     cursor: pointer;
+}
+#moh_roomE>div:hover {
+    transition: 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
 }
-#moh_roomA img{
+
+#moh_roomE img {
     width: 100%;
     height: 200px;
 }
-.moh_pacA{
+
+.moh_pacE {
     border: 1px solid #e6e6e6;
     border-radius: 2px;
     margin-left: auto;
@@ -69,32 +83,34 @@
     text-align: center;
     font-size: 18px;
 }
-.moh_viewallA{
-    display: flex;
-    margin-left: 150px;
-    margin-top: 50px;
-    cursor: pointer;
-}
-.moh_viewallA>i{
+
+.moh_viewallE>i {
     color: #1dbdc0;
     display: flex;
     justify-content: center;
-    background-color: white;  
-    margin-top: 20px;  
-    margin-left: 10px;
+    margin-top: 50px;
+    font-size: 60px;
+    background-color: white;
 }
-.moh_viewallA>p{
+
+.moh_viewallE>p {
     color: #1dbdc0;
     text-align: center;
-    margin-top: 17px;
+    margin-top: 10px;
 }
-#moh_deskA a{
-    text-decoration-line: none;
-}
-.moh_headingLineA{
+.moh_headingLineE{
     width: 5%;
     margin: auto;
     font-size: 5px;
     border: 1px red solid;
     margin-top: 10px;
+}
+#moh_subDeskE{
+
+    display: flex;
+    justify-content:flex-start;
+}
+#moh_subContE{
+    display: flex;  
+    justify-content:flex-end;
 }

@@ -8,33 +8,35 @@
 
 
 
-#moh_mainF {
+#moh_mainA {
     border: 1px solid red;
-    margin: auto;
+    width: 100%;
     height: auto;
 }
 
-#moh_deskF {
+#moh_deskA {
     border: 1px solid blue;
     font-size: 16px;
     font-weight: 300;
     padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
-#moh_deskF span{
+#moh_deskA span{
     color: red;
     margin: 10px;
     padding: 10px;
 }
-#moh_deskF span+span~span{
+#moh_deskA span+span~span{
     color: green;
     margin: 60px;
 }
-.moh_headingF{
+.moh_headingA{
     margin-top: 80px;
     text-align: center;
-    font-weight: lighter;
+    font-weight: lighter   ;
 }
-#moh_roomF{
+#moh_roomA{
     border: 1px solid;
     width: 80%;
     margin: auto;
@@ -45,28 +47,20 @@
     margin-top: 50px;
 }
 
-#moh_roomF>div{
+#moh_roomA>div{
     border: 1px solid green;
+    cursor: pointer;
+}
+#moh_roomA>div:hover {
+    transition: 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 
 }
-#moh_ApartmentF{
-    border: 1px solid yellow;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 200px);
-    gap: 40px;
-    margin: auto;
-    margin-top: 50px;
-}
-#moh_ApartmentF>div{
-    border: 1px solid teal;
-}
-#moh_roomF img{
+#moh_roomA img{
     width: 100%;
     height: 200px;
 }
-.moh_pacF{
+.moh_pacA{
     border: 1px solid #e6e6e6;
     border-radius: 2px;
     margin-left: auto;
@@ -81,30 +75,41 @@
     text-align: center;
     font-size: 18px;
 }
-#moh_ApartmentF img{
-    width: 100%;
-    height: 200px;
+.moh_viewallA{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    cursor: pointer;
 }
-.moh_viewallF>i{
+.moh_viewallA>i{
     color: #1dbdc0;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    font-size: 60px;
-    background-color: white;    
+    background-color: white;  
+    margin-top: 20px;  
+    margin-left: 10px;
 }
-.moh_viewallF>p{
+.moh_viewallA>p{
     color: #1dbdc0;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 17px;
 }
-#moh_deskF a{
+#moh_deskA a{
     text-decoration-line: none;
 }
-.moh_headingLineF{
+.moh_headingLineA{
     width: 5%;
     margin: auto;
     font-size: 5px;
     border: 1px red solid;
     margin-top: 10px;
+}
+#moh_subDeskA{
+
+    display: flex;
+    justify-content:flex-start;
+}
+#moh_subContA{
+    display: flex;  
+    justify-content:flex-end;
 }
