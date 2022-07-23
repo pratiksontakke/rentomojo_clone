@@ -4,18 +4,20 @@ let navbar1 = () => {
     <div id="kau_main">
         <div id="kau_innerMain">
             <a id="kau_logo" href="../index.html"><img  src="../images/icons/image.svg" alt=""></a>
-            <select name="" id="kau_city">
-                <option value="">City</option>
-                <option value="Bangalore">Bangalore</option>
-                <option value="Delhi">Delhi</option>
-                <option value="Pune">Pune</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Noida">Noida</option>
-                <option value="Gurgaon">Gurgaon</option>
-                <option value="Hydrabad">Hydrabad</option>
-                <option value="Chennai">Chennai</option>
-                <option value="Kolkata">Kolkata</option>
-            </select>
+            <div id="kau_city_div">
+                <select name="" id="kau_city">
+                    <option value="">City</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                    <option value="Hydrabad">Hydrabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </div>
 
             <input id="kau_scarch" type="text" placeholder="Search for products">
             <span>
