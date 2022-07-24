@@ -1,69 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyc PAge</title>
-    <style link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </style>
-
-<link rel="stylesheet" href="./styles/kycPage.css">
-        
-
-         
-
-   
+    <style link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></style>
+    <link rel="stylesheet" href="./styles/kycPage.css" />
 </head>
 <body>
-
     <div id="sam_main_div">
-
-      
         <div id="sam_img_div">
-            <img id="sam_banner_img" src="https://www.rentomojo.com/public/images/smartAuth/cat-happy.svg" alt="banner">
+            <img id="sam_banner_img" src="https://www.rentomojo.com/public/images/smartAuth/cat-happy.svg"
+                alt="banner" />
         </div>
-
-
-   <div id="sam_form_div">
-
-    <img src="https://www.rentomojo.com/public/images/smartAuth/close.svg" alt="cross" id="sam_back_to_home" onclick="backHomeFunc()">
-
+        <div id="sam_form_div">
+            <img src="https://www.rentomojo.com/public/images/smartAuth/close.svg" alt="cross" id="sam_back_to_home"
+                onclick="backHomeFunc()" />
             <div>
-                <p id="sam_heading">Just one last step
-                    </p>
+                <p id="sam_heading">Just one last step</p>
             </div>
-        
-           
-
-               <div id="sam_input_div">
-                    <form id="form" action="form">
-
-                        <!-- <label for="sam_name"></label> -->
-
-                        
-                        <input type="text" autocomplete="off" id="sam_name" placeholder="Enter name as per PAN /Govt ID*" required>
-                        <input type="email" autocomplete="off" id="sam_email_id" placeholder="Email ID* " required>
-                        <input type="text" autocomplete="off" id="sam_referral" placeholder="Referral Code (Optional)" required>
-        
-                        
-                            <input type="submit" disabled  value="Continue" id="sam_submit">
-                       <!-- <button disabled id="sam_submit"  type="submit">Continue</button> -->
-                       
-                    </form>
-                </div>
-           
-           
+            <div id="sam_input_div">
+                <form id="form" action="form">
+                    <!-- <label for="sam_name"></label> -->
+                    <input type="text" autocomplete="off" id="sam_name" placeholder="Enter name as per PAN /Govt ID*"
+                        required />
+                    <input type="email" autocomplete="off" id="sam_email_id" placeholder="Email ID* " required />
+                    <input type="text" autocomplete="off" id="sam_referral" placeholder="Referral Code (Optional)"
+                        required />
+                    <input type="submit" disabled value="Continue" id="sam_submit" />
+                    <!-- <button disabled id="sam_submit"  type="submit">Continue</button> -->
+                </form>
+            </div>
         </div>
-       
-       
     </div>
-   
 </body>
 </html>
-
-<script src="./scripts/kycPage.js">
-
-
-
-   
-</script>
+<script src="./scripts/kycPage.js"></script>
