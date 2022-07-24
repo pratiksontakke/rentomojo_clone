@@ -10,7 +10,17 @@ function kau_myfunc() {
     div.classList.toggle("kau_show");
     console.log("kau_button");
 }
+
+
+
+
+
+
+
+
+
 document.querySelector("#kau_button").addEventListener("click", kau_myfunc);
+
 let displayData = () => {
     document.querySelector("#pra_cartAppend").innerHTML = null;
     products.forEach((el, index) => {
@@ -88,17 +98,4 @@ document.querySelector("#kau_searchLogo").addEventListener("click", () => {
     pra_search();
 })
 
-/*  
-{
-    cartImgLink: "i05w1kj4-1024x512.jpg",
-    imgLink: "i05w1kj4-1024x512.jpg",
-    name: "Double Bed with Fridge & Washing Machine",
-    category: "packages",
-    sub_category: "bedroom",
-    Sub_sub_category: "bed",
-    price: 539,
-    deposit: 829,
-    quantity: 1,
-    id: "pra_12345",
-}
-*/
+
