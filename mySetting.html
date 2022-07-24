@@ -40,7 +40,11 @@
       #sam_name,#sam_email,#sam_number{
         color: grey;
         font-family:  sans-serif;
-        font-weight:lighter;
+        font-weight: lighter;
+        
+      }
+      #sam_ist,#sam_2nd,#sam_3rd{
+        margin-bottom: 30px;
       }
       
       #btn{
@@ -56,6 +60,10 @@
     </style>
 </head>
 <body>
+
+  <div id="navbar"></div>
+
+
     <div id="sam_main_div">
      <div id="sam_heading_div"><h1>My Settings </h1></div> 
 
@@ -68,10 +76,26 @@
     </div>
 </div>
 
+<div id="footer"></div>
 </body>
 </html>
 
-<script>
+
+
+<script type="module">
+import navbar1 from "./components/scripts/navbar.js";
+import footer1 from "./components/scripts/footer.js";
+document.querySelector("#navbar").innerHTML = navbar1();
+document.querySelector("#footer").innerHTML = footer1();
+function kau_myfunc() {
+let div = document.querySelector("#kau_show-on-hover");
+div.classList.toggle("kau_show");
+console.log("kau_button")
+}
+document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
+
+
+
     let userData = JSON.parse(localStorage.getItem('isLogin'));
     let num11 = JSON.parse(localStorage.getItem('num11'));
     console.log(userData);
