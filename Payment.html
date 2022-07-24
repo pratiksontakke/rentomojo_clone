@@ -10,12 +10,15 @@
 </head>
 
 <body>
+<div id="navbar"></div>
+
   <div id="main">
     <!-- Left Part -->
+    
     <div id="left">
 
       <!-- Showing Contact Details (Email and full Address) -->
-      <h1>Shipping Details</h1>
+      <h1 id="pp">Shipping Details</h1>
       <div id="box">
         <div class="display">
           <p class="text">Contact</p>
@@ -145,12 +148,27 @@
 
 
     </div>
-
+   
+</div>
+<div id="footer"></div>
 </body>
 
 </html>
 
-<script>
+<script type="module">
+
+  import navbar1 from "../components/scripts/navbar.js";
+  import footer1 from "../components/scripts/footer.js";
+  document.querySelector("#navbar").innerHTML = navbar1();
+  document.querySelector("#footer").innerHTML = footer1();
+  function kau_myfunc() {
+    let div = document.querySelector("#kau_show-on-hover");
+    div.classList.toggle("kau_show");
+    console.log("kau_button")
+  }
+  document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
+
+
   let address = JSON.parse(localStorage.getItem("userAddress"));
   document.querySelector("#email").innerText = address.phone;
   document.querySelector("#address").innerText = address.address + "," + " " + address.apartment + "," + " " + address.pin + "," + " " + address.city + "," + " " + address.state + "," + " " + address.country;

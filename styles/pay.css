@@ -3,8 +3,13 @@
      display: flex;
      margin: auto;
      justify-content: center;
+     margin-top: 150px;
  }
-
+#pp{
+    /* color: #dc3226; */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
  #left {
      width: 50%;
      /* border: 1px solid red; */

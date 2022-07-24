@@ -10,6 +10,7 @@
     display: flex;
     margin: 50px auto;
     justify-content: end;
+    margin-top: 150px;
 }
 a {
     text-decoration: none;
@@ -136,11 +137,12 @@ select:focus {
     border: 0px;
     font-weight: 600;
     cursor: pointer;
-    background-color: #616160;
+    background-color: #dc3226;
 }
 
 #submit:hover {
-    background-color: #494948;
+    background-color:#dc3226;
+    cursor: pointer;
 }
 
 #left>div:last-child {

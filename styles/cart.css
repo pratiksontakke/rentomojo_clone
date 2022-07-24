@@ -28,9 +28,11 @@
     width: 90%;
   }
 
+
   #c>div {
 
       border-radius: 10px;
+     
 
 
 
@@ -44,12 +46,17 @@
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 100vh;
+   
      
+  }
+  #c{
+margin: 100px 0;
   }
 
   #c>div:nth-child(2) {
       grid-area: b;
       /* background-color: red; */
+   
    
   }
 

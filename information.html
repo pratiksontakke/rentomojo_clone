@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/info.css" />
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="main">
       <!-- Left Part -->
       <div id="left">
@@ -132,10 +133,23 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
   </body>
 </html>
 
-<script>
+<script type="module">
+
+  import navbar1 from "../components/scripts/navbar.js";
+  import footer1 from "../components/scripts/footer.js";
+  document.querySelector("#navbar").innerHTML = navbar1();
+  document.querySelector("#footer").innerHTML = footer1();
+  function kau_myfunc() {
+    let div = document.querySelector("#kau_show-on-hover");
+    div.classList.toggle("kau_show");
+    console.log("kau_button")
+  }
+  document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
+
   let total = JSON.parse(localStorage.getItem("totalPrice1")) || 0;
 
   document.querySelector(".total1").innerText = "₹" + total;
