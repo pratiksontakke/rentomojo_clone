@@ -1,28 +1,23 @@
 let addToCart = JSON.parse(localStorage.getItem("addToCart")) || [];
-let singleProduct = JSON.parse(localStorage.getItem("singleProduct")) || null;
+let singleProduct = JSON.parse(localStorage.getItem("singleProduct")) || {};
+let pra_searchKey = JSON.parse(localStorage.getItem("pra_searchKey")) || null;
 import products from "../db/db.js";
 import navbar1 from "../components/scripts/navbar.js";
-import footer1 from "../components/scripts/footer.js";
+// import footer1 from "../components/scripts/footer.js";
 document.querySelector("#navbar").innerHTML = navbar1();
-document.querySelector("#footer").innerHTML = footer1();
+// document.querySelector("#footer").innerHTML = footer1();
 function kau_myfunc() {
     let div = document.querySelector("#kau_show-on-hover");
     div.classList.toggle("kau_show");
     console.log("kau_button");
 }
-
-
-
-
-
-
-
-
 document.querySelector("#kau_button").addEventListener("click", kau_myfunc);
-
 let displayData = () => {
     document.querySelector("#pra_cartAppend").innerHTML = null;
-    products.forEach((el, index) => {
+    let pra_prod = products.filter((el)=> {
+        return el.category == pra_searchKey 
+    })
+    pra_prod.forEach((el, index) => {
         let divMain = document.createElement("div");
         divMain.setAttribute("class", "pra_card");
         let divM1 = document.createElement("div");
@@ -85,16 +80,18 @@ let pra_addTocartFun = (el, index) => {
     }
 };
 window.onload = displayData();
-// kau_scarch search bar;
-let pra_searchKey = JSON.parse(localStorage.getItem("pra_searchKey")) || null;
-let pra_search = () => {
-    let pra_search_value = document.querySelector("#kau_scarch").value.trim().toLowerCase();
-    pra_searchKey = pra_search_value;
-    localStorage.setItem("pra_searchKey", JSON.stringify(pra_searchKey));
-    window.location.href = "./searchbar.html";
-};
-document.querySelector("#kau_searchLogo").addEventListener("click", () => {
-    pra_search();
-})
-
-
+/// search bar 
+/*  
+{
+    cartImgLink: "i05w1kj4-1024x512.jpg",
+    imgLink: "i05w1kj4-1024x512.jpg",
+    name: "Double Bed with Fridge & Washing Machine",
+    category: "packages",
+    sub_category: "bedroom",
+    Sub_sub_category: "bed",
+    price: 539,
+    deposit: 829,
+    quantity: 1,
+    id: "pra_12345",
+}
+*/
