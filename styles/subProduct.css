@@ -1,10 +1,8 @@
 #moh_mainPro {
-    border: 1px solid red;
     display: flex;
 }
 
 #moh_mainPro>div {
-    border: 1px solid blue;
     height: 500px;
     margin-top: 60px;
 }
@@ -52,13 +50,11 @@
 }
 
 h2+hr {
-    border: 1px solid red;
     width: 4%;
     margin-left: 70px;
 }
 
 #moh_proDetails {
-    border: 1px solid green;
     width: 65%;
     display: flex;
     margin-top: 250px;
@@ -66,7 +62,8 @@ h2+hr {
 }
 
 #moh_proDetails>div {
-    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 15px;
 }
 
 #moh_proDetails>div:nth-child(1) {
@@ -99,29 +96,26 @@ hr+p {
 }
 
 #moh_descri {
-    border: 1px solid yellowgreen;
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-#moh_descri>div {
-    border: 1px solid teal;
-}
 
 #moh_priceDetail {
-    border: 1px solid chocolate;
-    width: 37%;
-    margin-left: 495px;
+    width: 34.5%;
+    margin-left: 535px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #moh_priceDetail>div {
-    border: 1px solid pink;
     display: flex;
+    
+    
 }
 
 #moh_priceDetail>div:nth-child(2) {
@@ -129,26 +123,22 @@ hr+p {
 }
 
 #moh_month {
-    margin-top: 16px;
     margin-left: 8px;
+    padding: 10px;
 }
 
 #moh_depo {
-    margin-top: 16px;
     margin-left: 10px;
 }
 #moh_monthD {
-    margin-top: 16px;
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 #moh_depoD {
-    margin-top: 16px;
     margin-left: 10px;
 }
 
 #moh_proPrice {
-    border: 1px solid yellow;
     width: 70%;
     margin: auto;
     display: flex;
@@ -157,10 +147,10 @@ hr+p {
 }
 
 #moh_proPrice>div {
-    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     margin: auto;
     width: 50%;
-
+    height: 60px;
 }
 
 #moh_view {
@@ -207,7 +197,7 @@ hr+p {
     margin-top: 20px;
 }
 #moh_coupon>div{
-    border: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 #moh_coupBtn{
     right: 30px;
