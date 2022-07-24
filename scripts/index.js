@@ -9,7 +9,17 @@ function kau_myfunc() {
     div.classList.toggle("kau_show");
     console.log("kau_button")
 }
+
+// function samLogFunc(){ 
+// console.log("sam_log")
+// }
+
+
 document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
+
+// document.getElementById("sam_log").addEventListener("click", samLogFunc)
+
+
 
 let displayData = () => {
     document.querySelector("#pra_cartAppend").innerHTML = null;

@@ -61,4 +61,14 @@ function kau_myfunc() {
     let div = document.querySelector("#kau_show-on-hover");
     div.classList.toggle("kau_show");
 }
+
+// i have changed this line
+
+
+// function samLogFunc(){
+//     let log = document.getElementById('sam_log');
+//     // console.log(log);
+//     console.log('logging....')
+// }
+
 export default navbar1;
