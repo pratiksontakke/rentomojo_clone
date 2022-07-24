@@ -4,26 +4,21 @@
   box-sizing: border-box;
 }
 #moh_main {
-  border: 1px solid red;
   margin: auto;
   height: auto;
+  margin-top: 62px;
 }
 #moh_desk {
-  border: 1px solid blue;
   font-size: 16px;
   font-weight: 300;
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 #moh_desk span {
-  color: red;
   margin: 10px;
   padding: 10px;
-}
-#moh_desk span + span ~ span {
-  color: green;
-  margin: 60px;
 }
 .moh_heading {
   margin-top: 80px;
@@ -31,7 +26,6 @@
   font-weight: lighter;
 }
 #moh_room {
-  border: 1px solid;
   width: 80%;
   margin: auto;
   display: grid;
@@ -41,7 +35,6 @@
   margin-top: 50px;
 }
 #moh_room > div {
-  border: 1px solid green;
   cursor: pointer;
 }
 #moh_room > div:hover {
@@ -49,7 +42,6 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 #moh_Apartment {
-  border: 1px solid yellow;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -59,7 +51,6 @@
   margin-top: 50px;
 }
 #moh_Apartment > div {
-  border: 1px solid teal;
   cursor: pointer;
 }
 #moh_Apartment > div:hover {
@@ -93,7 +84,6 @@
 .moh_headingLine {
   width: 5%;
   font-size: 5px;
-  border: 1px red solid;
   margin-top: 10px;
   margin-left: 150px;
 }
