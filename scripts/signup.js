@@ -14,27 +14,7 @@ input.addEventListener("keyup", (e) => {
   }
 });
 
-// let form = document.getElementById('form');
-// let number = form.sam_number.value;
-// let Number1 = JSON.parse(localStorage.getItem('users'));
 
-// if(number === Number1){
-
-//     console.log("Existing User");
-//     window.location.href = "Login.html";
-// }
-
-// else{
-//     // localStorage.setItem('users',number);
-//     // window.location.href = "otp.html";
-
-//      function displayDate() {
-
-//     event.preventDefault()
-
-//     localStorage.setItem('users',number);
-//     window.location.href = "otp.html";
-// }
 
 function displayDate() {
   event.preventDefault();
@@ -62,6 +42,6 @@ function displayDate() {
 }
 function backHomeFunc() {
   // console.log("Back Homne");
-  window.location.href = "pro.html";
+  window.location.href = "index.html";
 }
-// @media all and (min-width:350px) and (max-width:479px)
+

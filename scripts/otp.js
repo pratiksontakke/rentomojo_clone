@@ -51,7 +51,7 @@ function displayDate() {
 
 function backHomeFunc() {
   // console.log("Back Homne");
-  window.location.href = "pro.html";
+  window.location.href = "index.html";
 }
 
 function numberChangeFunc() {
