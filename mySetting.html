@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <style>
+      #sam_main_div{
+        /* display: flex; */
+        margin: auto;
+        justify-content: center;
+        /* border: 2px solid blue; */
+        height: 400px;
+        width: 40%;
+        margin-top: 100px;
+
+
+      }  
+         
+      #sam_heading_div{
+        /* border: 2px solid red; */
+        height: 80px;
+        width: 200px;
+        margin-bottom: -10px;
+      }
+      #sam_heading_div > h1{
+        color:rgba(23, 20, 20, 0.942);
+        font-size: 20px;
+        font-family:  sans-serif;
+        font-weight:lighter;
+      }
+
+      .sam_para{
+        color: grey;
+        font-family:  sans-serif;
+        font-size: 14px;
+      }
+      #sam_name,#sam_email,#sam_number{
+        color: grey;
+        font-family:  sans-serif;
+        font-weight: lighter;
+        
+      }
+      #sam_ist,#sam_2nd,#sam_3rd{
+        margin-bottom: 30px;
+      }
+      
+      #btn{
+        color: white;
+        background-color: #DC3226;
+        border: none;
+        padding: 12px 15px;
+      }
+      #btn:hover{
+        cursor: pointer;
+      }
+
+    </style>
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+
+    <div id="sam_main_div">
+     <div id="sam_heading_div"><h1>My Settings </h1></div> 
+
+     <div id="container">
+      
+     <hr id="sam_ist">
+     <hr id="sam_2nd">
+     <hr id="sam_3rd">
+
+    </div>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>
+
+
+
+<script type="module">
+import navbar1 from "./components/scripts/navbar.js";
+import footer1 from "./components/scripts/footer.js";
+document.querySelector("#navbar").innerHTML = navbar1();
+document.querySelector("#footer").innerHTML = footer1();
+function kau_myfunc() {
+let div = document.querySelector("#kau_show-on-hover");
+div.classList.toggle("kau_show");
+console.log("kau_button")
+}
+document.querySelector("#kau_button").addEventListener("click", kau_myfunc)
+
+
+
+    let userData = JSON.parse(localStorage.getItem('isLogin'));
+    let num11 = JSON.parse(localStorage.getItem('num11'));
+    console.log(userData);
+
+    let append = (userData) =>{
+        let container = document.getElementById('container');
+
+        let name = document.createElement('p');
+        name.innerText = "What's your name?* "
+        name.setAttribute('class','sam_para');
+
+        let userName = document.createElement('h3');
+        userName.innerText = userData.userName;
+        userName.setAttribute('id','sam_name');
+
+        let sam_ist = document.getElementById('sam_ist');
+
+        let mail = document.createElement('p');
+        mail.innerText = "Email address* "
+        mail.setAttribute('class','sam_para');
+
+        let email = document.createElement('h3');
+        email.innerText = userData.email;
+        email.setAttribute('id','sam_email');
+
+        let sam_2nd = document.getElementById('sam_2nd');
+
+        let num = document.createElement('p');
+        num.innerText = "Mobile Number* "
+        num.setAttribute('class','sam_para');
+
+        let number = document.createElement('h3');
+        number.innerText = num11;
+        number.setAttribute('id','sam_number');
+
+        let sam_3rd = document.getElementById('sam_3rd');
+
+        let btn = document.createElement('button');
+        btn.innerText = "Change Password";
+        btn.setAttribute('id','btn');
+        btn.addEventListener('click',function(){
+            window.location.href ="changePassWord.html";
+        })
+
+
+        container.append(name,userName,sam_ist, mail,email,sam_2nd, num,number,sam_3rd,btn);
+    }
+
+    append(userData);
+</script>

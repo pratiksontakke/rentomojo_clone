@@ -1,0 +1,325 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+#par_par #main {
+  width: 100%;
+  display: flex;
+  margin: 100px auto;
+  justify-content: end;
+}
+#par_par #main a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #dc3226;
+}
+#par_par #left {
+  width: 47%;
+}
+#par_par #right {
+  width: 44%;
+  padding: 60px 80px 60px 40px;
+  background-color: #fafafa;
+}
+#par_par #contact {
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+#par_par #tick {
+  display: flex;
+  /* justify-content: start; */
+  align-items: start;
+  margin-bottom: 40px;
+}
+#par_par #tick > p {
+  display: flex;
+  /* justify-content: start; */
+  align-items: center;
+  height: 22px;
+}
+#par_par #tick > input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #dc3226;
+  border-radius: 20%;
+}
+#par_par input[type="checkbox"]:checked {
+  background-color: #dc3226;
+}
+#par_par input[type="checkbox"]:checked:after {
+  background-color: #dc3226;
+  padding: 0px;
+  padding-right: 4px;
+  padding-left: 3px;
+  content: "\2713";
+  font-size: 15px;
+  color: rgb(241, 235, 235);
+}
+#par_par #form {
+  width: 90%;
+}
+#par_par #form > select {
+  width: 100%;
+}
+#par_par select,
+#par_par input {
+  font-size: 15px;
+  padding: 15px 10px;
+  border-radius: 7px;
+  border: 1px solid rgb(185, 184, 184);
+  margin-bottom: 15px;
+  width: 100%;
+}
+#par_par input:focus,
+#par_par select:focus {
+  outline: none;
+  border: 3px solid #dc3226;
+}
+#par_par #name {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+#par_par #state {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#par_par #form > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: -20px;
+  align-items: center;
+}
+#par_par #form > div:last-child > p {
+  cursor: pointer;
+  color: #dc3226;
+}
+#par_par #submit {
+  width: 190px;
+  height: 60px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  border: 0px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #616160;
+}
+#par_par #submit:hover {
+  background-color: #494948;
+}
+#par_par #left > div:last-child {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 3fr;
+  font-size: 13px;
+  color: #dc3226;
+  margin: 20px 0px;
+}
+#par_par #left > div:last-child > p {
+  cursor: pointer;
+}
+#par_par hr {
+  border: 0.1px solid rgb(229, 228, 228);
+  width: 90%;
+}
+#par_par #right > p:first-child {
+  font-size: 17px;
+  font-weight: bold;
+  color: #dc3226;
+  margin-bottom: 50px;
+}
+#par_par .text > span {
+  color: #dc3226;
+}
+#par_par #container {
+  width: 90%;
+  height: 120px;
+  overflow: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+#par_par .vl {
+  border-right: 2px solid rgb(229, 228, 228);
+  height: auto;
+}
+#par_par .rec {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 64% 22%;
+  gap: 20px;
+}
+#par_par .button {
+  font-size: 15px;
+  /* width: 190px; */
+  height: 50px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #c8c8c8;
+  color: white;
+  font-weight: 600;
+}
+#par_par .button:hover {
+  background-color: #dc3226;
+}
+#par_par #totalBar {
+  width: 100%;
+  height: 60px;
+  padding-right: 55px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#par_par #totalBar > div:last-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+#par_par #total {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+#par_par #totalBar2 {
+  width: 100%;
+  height: 60px;
+  padding-right: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#par_par #totalBar2 > div {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#par_par .text {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+/* Large Screen */
+@media all and (min-width: 721px) and (max-width: 1500px) {
+  #par_par #main {
+    width: 100%;
+  }
+  #par_par #left {
+    width: 46%;
+  }
+  #par_par #right {
+    width: 45%;
+    padding-right: 80px;
+  }
+  #par_par #left > div:last-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    /* gap: 10px; */
+    font-size: 10px;
+  }
+  #par_par #container {
+    width: 90%;
+  }
+  #par_par #nav {
+    width: 43%;
+  }
+  #par_par #nav > div {
+    width: 100%;
+  }
+  #par_par #nav > div p {
+    font-size: 12px;
+  }
+  #par_par #avatar {
+    width: 100%;
+    align-items: center;
+  }
+}
+/* Medium Screen */
+@media all and (min-width: 480px) and (max-width: 720px) {
+  #par_par #main {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
+  #par_par #left {
+    width: 100%;
+    margin: auto;
+    padding-left: 100px;
+  }
+  #par_par #right {
+    width: 100%;
+    padding-left: 100px;
+  }
+  #par_par #left > div:last-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 2fr;
+    font-size: 10px;
+  }
+  #avatar {
+    width: 100%;
+    align-items: center;
+  }
+}
+/* small Screen */
+@media all and (min-width: 350px) and (max-width: 479px) {
+  #par_par #main {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
+  #par_par #left {
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    padding-left: 15px;
+  }
+  #par_par #form {
+    width: 95%;
+  }
+  #par_par #right {
+    width: 100%;
+    padding: 0px 15px;
+  }
+  #par_par #left > div:last-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1fr;
+    font-size: 9px;
+  }
+  #par_par #totalBar {
+    padding-right: 0px;
+  }
+  #par_par #totalBar2 {
+    padding-right: 0px;
+  }
+  #par_par #container {
+    height: 160px;
+  }
+  #par_par #nav {
+    width: 40%;
+  }
+  #par_par #nav > div {
+    width: 100%;
+  }
+  #par_par #nav > div p {
+    font-size: 9px;
+  }
+  #par_par #avatar {
+    width: 100%;
+    align-items: center;
+  }
+}

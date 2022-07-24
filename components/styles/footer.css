@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#kau_mainFooter { 
+    margin-top: 100px;
+    background-color: #f5f7fa;
+    /* height: 80vh; */
+    width: 100%;
+    border: 1px solid transparent;
+}
+#kau_first {
+    font-size: 14px;
+    color: rgb(116, 116, 116);
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: Muli, sans-serif;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box !important; */
+    width: 76%;
+    height: 30%;
+    margin-left: 11%;
+    margin-right: 11%;
+    border: 1px solid transparent;
+    margin-top: 6%;
+}
+#kau_footerHeading{
+    /* font-size: 14px; */
+    font-weight: bolder;
+}
+.kau_footerP{
+    font-size: 12px;
+    color: rgb(184, 194, 203);
+    font-weight: 300;
+}
+#kau_read{
+    cursor: pointer;
+    padding: 5px 0;
+}
+#kau_second{
+    display: flex;
+    border: 1px solid transparent;
+    height: auto;
+    width: 76%;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 40px;
+    font-family: Muli, sans-serif;
+}
+#kau_second>div{
+    border: 1px solid transparent;
+    width: 25%;
+    
+}
+.kau_mojo{
+    color: rgb(98, 97, 97);
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+.kau_mojo>p{
+    margin-top: 15px;
+}
+.kau_mojo>input{
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+.kau_mojo>img{
+    width: 60%;
+    margin-top: 10px;
+}
+#kau_mainFooter hr{
+    width: 77%;
+    margin-left: 11%;
+    margin-right: 12.5%;
+    margin-top: 5vh;
+}
+#kau_buttomFooter{
+    display: flex;
+    border: 1px solid transparent;
+    height: 100px;
+    font-family: Muli,sans-serif;
+}
+#kau_buttomFooter>div:nth-child(1){
+    border: 1px solid transparent;
+    width: 15%;
+    margin-left: 10%;
+    /* display: grid; */
+    text-align: center;
+    /* justify-content: center; */
+}
+#kau_buttomFooter>div:nth-child(1)>p{
+    margin-top: 4vh;
+}
+#kau_buttomFooter>div:nth-child(2){
+    border: 1px solid transparent;
+    width: 50%;
+    display: flex;
+}
+#kau_buttomFooter>div{
+    justify-content: center;
+    color: rgb(103, 103, 105);
+}
+#kau_buttomFooter>div>img{
+    margin-left: 10px;
+    margin-top: 25px;
+}

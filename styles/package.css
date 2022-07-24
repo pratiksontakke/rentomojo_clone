@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#moh_main {
+  margin: auto;
+  height: auto;
+  margin-top: 62px;
+}
+#moh_desk {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#moh_desk span {
+  margin: 10px;
+  padding: 10px;
+}
+.moh_heading {
+  margin-top: 80px;
+  margin-left: 150px;
+  font-weight: lighter;
+}
+#moh_room {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 40px;
+  margin-top: 50px;
+}
+#moh_room > div {
+  cursor: pointer;
+}
+#moh_room > div:hover {
+  transition: 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+#moh_Apartment {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 200px);
+  gap: 40px;
+  margin: auto;
+  margin-top: 50px;
+}
+#moh_Apartment > div {
+  cursor: pointer;
+}
+#moh_Apartment > div:hover {
+  transition: 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+#moh_room img {
+  width: 100%;
+}
+.moh_pac {
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  position: relative;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  width: 70%;
+  background-color: white;
+  text-align: center;
+  font-size: 18px;
+}
+#moh_Apartment img {
+  width: 100%;
+}
+#moh_desk a {
+  text-decoration-line: none;
+}
+.moh_headingLine {
+  width: 5%;
+  font-size: 5px;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+#moh_subDeskE {
+  display: flex;
+  justify-content: flex-start;
+}
+#moh_subContE {
+  display: flex;
+  justify-content: flex-end;
+}

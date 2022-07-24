@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#kau_main select#xyz {
+    border:0px;
+    outline:0px;
+    border: none;
+ }
+#kau_main a {
+    text-decoration: none;
+    color: black;
+}
+#kau_main select {
+    border: none;
+}
+.nav_display_flex {
+    display: flex;
+}
+#kau_main{
+    z-index: 1000000;
+    width: 100%;
+    height: 60px;
+    /* margin-top: 100px; */
+    border: 1px solid transparent;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+#kau_innerMain{
+    width: 80%;
+    border: 1px solid transparent;
+    height: 6vh;
+    margin-left: 11%;
+    margin-right: 10%;
+    display: flex;
+}
+#kau_logo{
+    height: 32px;
+    margin-top: .8%;
+    margin-left: 12px;
+}
+#kau_city_div {
+    padding: 5px;
+    display: flex;
+    margin: auto;
+    margin-top: 0.8%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+#kau_city{
+    font-size: larger;
+    margin-left: 20px;
+    border: 0px solid transparent;
+    font-family: Muli, sans-serif;
+    font-weight: 100;
+    color: rgb(99, 95, 95);
+    /* padding: 10px; */
+    display: flex;
+    margin: auto;
+    text-align: center;
+    align-items: middle;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+#kau_scarch{
+    margin-top: .5%;
+    margin-left: 40px;
+    width: 59%;
+    height: 75%;
+    border-radius: 10px;
+    border-color: rgb(215, 211, 211);
+    /* background-color: rgb(245,247,250); */
+    font-family: Muli, sans-serif;
+    padding: 20px;
+    border: .5px solid rgb(215, 211, 211);
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: gray;
+}
+#kau_searchLogo{
+    margin-top: 10px;
+    margin-left: -35px;
+    /* margin-right: 300px; */
+    height: 30px;
+    cursor: pointer;
+
+}
+#kau_cartLogo{
+    margin-top: 12px;
+    margin-left: 10px;
+
+}
+#kau_cart{
+    margin-top: 18px;
+    margin-left: 5px;
+    font-family: Muli, sans-serif;
+    color: rgb(99, 95, 95);
+}
+#kau_button{
+    padding: 5px 10px;
+    margin-left: 20px;
+    color: white;
+    background-color: #dc3226;
+    border: 0px transparent;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kau_button:hover{
+    border: 1px solid #dc3226;
+    color: #dc3226;
+    background-color: #fff;
+}
+/* #kau_button:not(:hover)+#kau_show-on-hover {
+    display: none;
+} */
+.kau_dropdc{
+    display:none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.kau_show{
+    display: block;
+}
+#kau_show-on-hover {
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;;
+}
+#kau_show-on-hover>p>img{
+    width: 18px;
+    margin-left: 20px;
+    /* margin-right: 5px; */
+}
+#kau_show-on-hover>p:hover{
+    background-color: rgb(166, 179, 180);
+    border-radius: 10px;
+}
+#kau_show-on-hover>p:nth-child(1){
+    border: 1px solid transparent;
+    margin-top: 5px;
+    /* background-color: rgb(166, 179, 180); */
+}
+#kau_show-on-hover>p:nth-child(2){
+    border: 1px solid transparent;
+    margin-top: 15px;
+}
+#kau_show-on-hover>p:nth-child(3){
+    border: 1px solid transparent;
+    margin-top: 15px;
+}
+#kau_show-on-hover>p:nth-child(4){
+    border: 1px solid transparent;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+#kau_show-on-hover>p>a {
+    text-decoration: none;
+    color: rgb(94, 90, 90);
+    font-family: Muli, sans-serif;
+    font-size: 18px;
+}

@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#c {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 30px;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "a a b"
+    "a a b"
+    "a a b"
+    "a a b";
+  padding: 100px;
+}
+#c > div {
+  border-radius: 10px;
+}
+#c > div:nth-child(1) {
+  grid-area: a;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#c > div:nth-child(2) {
+  grid-area: b;
+  background-color: red;
+}
+#box {
+  width: 95%;
+}
+.display {
+  width: 80%;
+  align-items: center;
+}
+.display > div {
+  width: 80%;
+}
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(77, 77, 77);
+  margin: 10px 0;
+}
+.pink {
+  cursor: pointer;
+  text-decoration: none;
+  margin: 10px 0;
+}
+#par_top {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.par_1 {
+  width: 100%;
+}
+.bi-chevron-right {
+  align-items: center;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: #dc3226;
+  margin-top: 15px;
+  width: 20%;
+}
+#par_middle {
+  margin: 10px 20px;
+}
+#par_middle > P {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#par_middle > P > img {
+  margin-right: 5px;
+}
+#legend {
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+fieldset {
+  width: 100%;
+  padding: 0 40px;
+  border-radius: 10px;
+}
+legend {
+  font-weight: bold;
+}
+.deposit {
+  display: flex;
+  justify-content: space-between;
+}
+#par_bottom {
+  display: flex;
+  width: 40%;
+  margin: 10px 20px;
+  background-color: #dc3226;
+  padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+#bottom_show_item {
+  display: block;
+  width: fit-content;
+}
+/* ///////////show items//////////// */

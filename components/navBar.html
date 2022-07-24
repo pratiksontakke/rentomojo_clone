@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/components/styles/navBarStyle.css">
+</head>
+
+<body>
+    <div id="kau_main">
+        <div id="kau_innerMain">
+            <a id="kau_logo" href="../index.html"><img  src="../images/icons/image.svg" alt=""></a>
+            <div id="kau_city_div">
+                <select name="" id="kau_city">
+                    <option value="">City</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Gurgaon">Gurgaon</option>
+                    <option value="Hydrabad">Hydrabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </div>
+            
+            
+
+            <input id="kau_scarch" type="text" placeholder="Search for products">
+            <span>
+                <img id="kau_searchLogo" src="../images/icons/image2.svg" alt="">
+            </span>
+            <a href="../cart.html" class="nav_display_flex">
+                <span>
+                    <img id="kau_cartLogo" src="../images/icons/image1.svg" alt="">
+                </span>
+                <span id="kau_cart">Cart</span>
+            </a>
+            
+
+            <div>
+                <button id="kau_button" onclick="kau_myfunc()">LOGIN/SIGNUP</button>
+                <div id="kau_show-on-hover" class="kau_dropdc">
+                    <p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/8033/8033582.png" alt="">
+                        <a href="../myAccount.html">My Account</a>
+                    </p>
+
+                    <p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="">
+                        <a href="#">My Wishlist</a>
+                    </p>
+
+                    <p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3524/3524659.png" alt="">
+                        <a href="../mySetting.html">Setting</a>
+                    </p>
+
+                    <!-- <p id="sam_log" onclick="samLogFunc()"> -->   <!--i have changed this (sam) -->
+                        <p>
+                        <img src="../images/icons/logouticon.png"
+                            alt="">
+                        <a href="#">Logout</a>   
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="module" src="./scripts/navbar.js"></script>
