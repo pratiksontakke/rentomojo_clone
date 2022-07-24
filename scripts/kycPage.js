@@ -1,3 +1,4 @@
+// let isLogin = JSON.parse(localStorage.getItem("isLogin"))
 const sam_submit = document.getElementById("sam_submit");
 // sam_submit.addEventListener("submit", displayDate);
 

@@ -18,7 +18,6 @@ function kau_myfunc() {
 
 
 
-
 document.querySelector("#kau_button").addEventListener("click", kau_myfunc);
 
 let displayData = () => {
