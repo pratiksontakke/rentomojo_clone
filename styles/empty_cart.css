@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+#par_cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#par_empty_cart_content {
+    width: 40%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid red; */
+    height: auto;
+}
+
+.par_empty-cart-image {
+    width: 280px;
+    height: 230px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid green; */
+
+}
+
+.par_empty-cart-image img {
+    width: 100%;
+    margin: 4% auto 0;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.par_head1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(49 49 49);
+    margin-top: 60px;
+    margin-bottom: 10px;
+font-family: Montserrat, sans-serif;
+    line-height: 1.1;
+    
+}
+.par_para1{
+    font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: rgb(113 113 113);
+        margin: 0 100px 40px;
+            line-height: 1.5;
+            font-family: Montserrat, sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+
+#par_btn1{
+    background: rgb(220 50 38);
+        border: 1px solid rgb(220 50 38);
+        color: rgb(255 255 255);
+            border-radius: 2px;
+                font-size: 15px;
+                font-weight: 300;
+               cursor: pointer;
+                padding: 10px 20px;
+                margin-bottom: 0;
+}
+.par_livechat{
+    width: 60px;
+    height: fit-content;
+    margin-left: 20px;
+margin-bottom: 20px;
+border-radius: 50%;
+cursor: pointer;
+}
+.par_livechat img{
+    width: 100%;
+}
