@@ -1,5 +1,8 @@
 let addToCart = JSON.parse(localStorage.getItem("addToCart")) || [];
 let singleProduct = JSON.parse(localStorage.getItem("singleProduct")) || null;
+let isLogin = JSON.parse(localStorage.getItem("isLogin"))
+let isLoginValid = JSON.parse(localStorage.getItem("isLoginValid")) || false;
+let users = JSON.parse(localStorage.getItem("users")) || [];
 import products from "../db/db.js";
 import navbar1 from "../components/scripts/navbar.js";
 import footer1 from "../components/scripts/footer.js";
@@ -10,16 +13,10 @@ function kau_myfunc() {
     div.classList.toggle("kau_show");
     console.log("kau_button");
 }
-
-
-
-
-
-
-
-
+if (isLoginValid) { //kau_button
+    document.getElementById("kau_button").innerText = isLogin.userName;
+}
 document.querySelector("#kau_button").addEventListener("click", kau_myfunc);
-
 let displayData = () => {
     document.querySelector("#pra_cartAppend").innerHTML = null;
     products.forEach((el, index) => {
