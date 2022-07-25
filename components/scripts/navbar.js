@@ -32,7 +32,7 @@ let navbar1 = () => {
             
 
             <div>
-                <button id="kau_button">LOGIN/SIGNUP</button>
+                <button id="kau_button">LOGIN</button>
                 <div id="kau_show-on-hover" class="kau_dropdc">
                     <p>
                         <img src="https://cdn-icons-png.flaticon.com/128/8033/8033582.png" alt="">
@@ -52,7 +52,11 @@ let navbar1 = () => {
                     <p>
                         <img src="../images/icons/logouticon.png"
                             alt="">
-                        <a href="#">Logout</a>
+                        <a href="./index.html">Logout</a>
+                    </p>
+                    <p>
+                        <img src="../images/icons/signup.png" alt="">
+                        <a href="../signup.html">Signup</a>
                     </p>
                 </div>
             </div>
