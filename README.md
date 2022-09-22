@@ -92,10 +92,10 @@ On frontend terminal perform:
 
 - COD
 
-#### Photo Gallery Website
+#### Photo Gallery :
 ![rentomojo-webite](./images/readme/1.png)
+
 ![rentomojo-webite](./images/readme/2.png)
-![rentomojo-webite](./images/readme/3.png)
 
 ## Thank you note
 Thank you all who is giving precious time to visit our little creative project which is made with lot of efforts.
