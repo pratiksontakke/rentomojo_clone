@@ -38,16 +38,6 @@ On frontend terminal perform:
 
 ## Functionality
 
-- Authentication
-- Seller page to add product
-- Add to cart
-- Payment Page with Discount Functionality
-- Search option to Search for product
-- Checkout
-- Indivisual Product description
-
-## Functionality
-
 - Login/Signup
 - Authentication
 - Admin page to add and delete product
