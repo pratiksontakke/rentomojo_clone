@@ -83,9 +83,14 @@ On frontend terminal perform:
 - COD
 
 #### Photo Gallery :
-![rentomojo-webite](./images/readme/1.png)
+![rentomojo-webite](./images/readme/01.jpg)
 
-![rentomojo-webite](./images/readme/2.png)
+![rentomojo-webite](./images/readme/02.jpg)
 
+![rentomojo-webite](./images/readme/03.jpg)
+
+![rentomojo-webite](./images/readme/04.jpg)
 ## Thank you note
 Thank you all who is giving precious time to visit our little creative project which is made with lot of efforts.
+
+_<p align="center"><sub>- Readme file designed by <a href="https://github.com/pratiksontakke">Pratik Sontakke</a> -</sub></p>_
