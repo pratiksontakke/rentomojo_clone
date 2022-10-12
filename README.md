@@ -85,11 +85,11 @@ On frontend terminal perform:
 #### Website Presentation :
 ![rentomojo-webite](/images/readme/01.jpg)
 
-![rentomojo-webite](./images/readme/02.jpg)
+![rentomojo-webite](/images/readme/02.jpg)
 
-![rentomojo-webite](./images/readme/03.jpg)
+![rentomojo-webite](/images/readme/03.jpg)
 
-![rentomojo-webite](./images/readme/04.jpg)
+![rentomojo-webite](images/readme/04.jpg)
 ## Thank you note
 Thank you all who is giving precious time to visit our little creative project which is made with lot of efforts.
 
