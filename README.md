@@ -83,7 +83,7 @@ On frontend terminal perform:
 - COD
 
 #### Website Presentation :
-![rentomojo-webite](./images/readme/01.jpg)
+![rentomojo-webite](/images/readme/01.jpg)
 
 ![rentomojo-webite](./images/readme/02.jpg)
 
